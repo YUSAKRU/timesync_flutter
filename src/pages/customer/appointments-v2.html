@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Keşfet - TimeSync</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0df2a6",
+                        "background-light": "#f5f8f7",
+                        "background-dark": "#10221c", // Deep Emerald/Charcoal
+                        "card-dark": "#182c25", // Slightly lighter for cards
+                        "secondary-text": "#90cbb7",
+                        "danger": "#ef4444",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem", 
+                        "lg": "1.5rem", 
+                        "xl": "2rem", 
+                        "2xl": "2.5rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        "glow": "0 0 20px rgba(13, 242, 166, 0.15)",
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: "Plus Jakarta Sans", sans-serif;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .fill-1 { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white overflow-x-hidden selection:bg-primary selection:text-black pb-24">
+<header class="pt-8 pb-4 px-6 flex justify-between items-center sticky top-0 z-30 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md">
+<div class="flex items-center gap-3">
+<div class="h-11 w-11 rounded-full bg-gradient-to-tr from-primary to-emerald-600 p-0.5 shadow-glow">
+<div class="h-full w-full rounded-full bg-card-dark flex items-center justify-center overflow-hidden">
+<span class="font-bold text-primary text-lg">B</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="text-xs font-medium text-secondary-text">Tekrar Merhaba,</span>
+<h1 class="text-xl font-bold text-white leading-tight">Burak 👋</h1>
+</div>
+</div>
+<button class="w-11 h-11 rounded-full border border-[#316856]/30 flex items-center justify-center hover:bg-[#316856]/20 transition-colors relative group bg-card-dark">
+<span class="material-symbols-outlined text-[#90cbb7] group-hover:text-primary transition-colors">notifications</span>
+<span class="absolute top-3 right-3.5 w-2 h-2 bg-primary rounded-full border-2 border-card-dark"></span>
+</button>
+</header>
+<div class="px-6 mb-6">
+<div class="flex items-center gap-3 bg-card-dark rounded-[1.2rem] px-4 py-4 border border-[#316856]/30 focus-within:border-primary/60 transition-colors shadow-lg shadow-black/20">
+<span class="material-symbols-outlined text-[#5c8b7b]">search</span>
+<input class="bg-transparent w-full text-base font-medium text-white placeholder:text-[#5c8b7b] outline-none border-none p-0 focus:ring-0" placeholder="Hizmet veya İşletme Ara" type="text"/>
+<div class="w-px h-6 bg-[#316856]/30 mx-1"></div>
+<button class="text-[#5c8b7b] hover:text-primary transition-colors p-1">
+<span class="material-symbols-outlined">tune</span>
+</button>
+</div>
+</div>
+<div class="pl-6 mb-8">
+<div class="flex gap-5 overflow-x-auto hide-scrollbar pr-6 pb-2">
+<button class="flex flex-col items-center gap-2 group min-w-[4.5rem]">
+<div class="w-16 h-16 rounded-full bg-card-dark border border-[#316856]/30 flex items-center justify-center group-hover:border-primary/50 transition-all">
+<span class="material-symbols-outlined text-[#90cbb7] group-hover:text-primary text-[28px]">grid_view</span>
+</div>
+<span class="text-xs font-semibold text-[#90cbb7] group-hover:text-white transition-colors">Tümü</span>
+</button>
+<button class="flex flex-col items-center gap-2 group min-w-[4.5rem]">
+<div class="w-16 h-16 rounded-full bg-primary flex items-center justify-center shadow-glow transform scale-105 transition-all">
+<span class="material-symbols-outlined text-black fill-1 text-[28px]">content_cut</span>
+</div>
+<span class="text-xs font-extrabold text-primary">Kuaför</span>
+</button>
+<button class="flex flex-col items-center gap-2 group min-w-[4.5rem]">
+<div class="w-16 h-16 rounded-full bg-card-dark border border-[#316856]/30 flex items-center justify-center group-hover:border-primary/50 transition-all">
+<span class="material-symbols-outlined text-[#90cbb7] group-hover:text-primary text-[28px]">dentistry</span>
+</div>
+<span class="text-xs font-semibold text-[#90cbb7] group-hover:text-white transition-colors">Dişçi</span>
+</button>
+<button class="flex flex-col items-center gap-2 group min-w-[4.5rem]">
+<div class="w-16 h-16 rounded-full bg-card-dark border border-[#316856]/30 flex items-center justify-center group-hover:border-primary/50 transition-all">
+<span class="material-symbols-outlined text-[#90cbb7] group-hover:text-primary text-[28px]">spa</span>
+</div>
+<span class="text-xs font-semibold text-[#90cbb7] group-hover:text-white transition-colors">Spa</span>
+</button>
+<button class="flex flex-col items-center gap-2 group min-w-[4.5rem]">
+<div class="w-16 h-16 rounded-full bg-card-dark border border-[#316856]/30 flex items-center justify-center group-hover:border-primary/50 transition-all">
+<span class="material-symbols-outlined text-[#90cbb7] group-hover:text-primary text-[28px]">nutrition</span>
+</div>
+<span class="text-xs font-semibold text-[#90cbb7] group-hover:text-white transition-colors">Diyet</span>
+</button>
+</div>
+</div>
+<div class="px-6 flex flex-col gap-6">
+<div class="flex justify-between items-center px-1">
+<h2 class="text-lg font-bold text-white tracking-tight">Popüler Salonlar</h2>
+<span class="text-xs font-bold text-primary cursor-pointer hover:underline">Haritada Göster</span>
+</div>
+<div class="group relative bg-card-dark rounded-3xl overflow-hidden shadow-lg border border-transparent hover:border-[#316856]/50 transition-all">
+<div class="relative h-56 w-full overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC4zhVE9fhTQ8ACCziRD7YJzpfvxG7UoxqdLg0HqviVjZUnFvMtbes8akWocNmd7xs5VNyMLkmScmzNBtb8UM-MmnzJJRWtl-jiwFkcZ0YlW7MG2cqrTwoOzRddd3Jw6yx6_6AwX35-ofo60F26OfpSXuxMFs9bQKdXXT8uC1q80KQ6Trg6S2y6lyKnvo-XISpiFmgj6PeQ5yKiX642fpdkNQ-JSunRcINvfIPF7J9sfGw7w6Pc6escrXQLYehdODO6wuU9DUn6qB8');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-card-dark via-card-dark/20 to-transparent opacity-100"></div>
+<button class="absolute top-4 right-4 h-10 w-10 rounded-full bg-background-dark/30 backdrop-blur-md border border-white/10 flex items-center justify-center text-white hover:bg-primary hover:text-black transition-all active:scale-95">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+<div class="absolute top-4 left-4 bg-primary/90 backdrop-blur-sm px-3 py-1.5 rounded-full shadow-lg">
+<span class="text-[10px] font-bold text-black uppercase tracking-wider">Açık</span>
+</div>
+</div>
+<div class="p-6 relative -mt-10">
+<div class="flex justify-between items-start mb-2">
+<div class="flex-1">
+<h3 class="text-2xl font-bold text-white mb-1.5 drop-shadow-sm">Makas Sanat &amp; Spa</h3>
+<div class="flex items-center gap-1 text-[#90cbb7]">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+<p class="text-sm font-medium">Kadıköy, İstanbul</p>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1">
+<div class="flex items-center gap-1 bg-yellow-400/10 px-2 py-1 rounded-lg border border-yellow-400/20">
+<span class="material-symbols-outlined text-yellow-400 text-[18px] fill-1">star</span>
+<span class="text-sm font-bold text-yellow-400">4.8</span>
+</div>
+<span class="text-[10px] text-secondary-text">1.2 km</span>
+</div>
+</div>
+<div class="w-full border-t border-dashed border-[#316856]/40 my-4"></div>
+<div class="flex items-center justify-between">
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1.5 rounded-lg bg-[#10231d] border border-[#316856]/40 text-[11px] font-medium text-[#90cbb7]">Saç Kesimi</span>
+<span class="px-3 py-1.5 rounded-lg bg-[#10231d] border border-[#316856]/40 text-[11px] font-medium text-[#90cbb7]">Cilt Bakımı</span>
+</div>
+<button class="h-8 w-8 flex items-center justify-center rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-black transition-colors">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<div class="group relative bg-card-dark rounded-3xl overflow-hidden shadow-lg border border-transparent hover:border-[#316856]/50 transition-all">
+<div class="relative h-56 w-full overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBTa-8-0bzaKIaAqTyg13FLNvntoOmv3Ldj7LAm9Xheov15Lm_uA3ECHwZELwUWDaCkSsc9dFVtPkHbzAd66M9-zPQUNGiSKlC7sEwQ1lNS5B8fwXskwn-C-SBN-QhtnqVdy7mvZt64BmvC2javcmW19ELj5S0hVqIPDvR2IvSy0yB3ywVX6lusdznX4t4IYXXkCpyxtGUlXThFQqt0b9r8qHZSNfQmviQ2FK4Z67H6px3f8tulV4vBMRaBZLa0LT-RItj_PY9GJh8');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-card-dark via-card-dark/20 to-transparent opacity-100"></div>
+<button class="absolute top-4 right-4 h-10 w-10 rounded-full bg-background-dark/30 backdrop-blur-md border border-white/10 flex items-center justify-center text-white hover:bg-primary hover:text-black transition-all active:scale-95">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="p-6 relative -mt-10">
+<div class="flex justify-between items-start mb-2">
+<div class="flex-1">
+<h3 class="text-2xl font-bold text-white mb-1.5 drop-shadow-sm">Elite Hair Studio</h3>
+<div class="flex items-center gap-1 text-[#90cbb7]">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+<p class="text-sm font-medium">Beşiktaş, İstanbul</p>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1">
+<div class="flex items-center gap-1 bg-yellow-400/10 px-2 py-1 rounded-lg border border-yellow-400/20">
+<span class="material-symbols-outlined text-yellow-400 text-[18px] fill-1">star</span>
+<span class="text-sm font-bold text-yellow-400">4.9</span>
+</div>
+<span class="text-[10px] text-secondary-text">3.5 km</span>
+</div>
+</div>
+<div class="w-full border-t border-dashed border-[#316856]/40 my-4"></div>
+<div class="flex items-center justify-between">
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1.5 rounded-lg bg-[#10231d] border border-[#316856]/40 text-[11px] font-medium text-[#90cbb7]">Saç Boyama</span>
+<span class="px-3 py-1.5 rounded-lg bg-[#10231d] border border-[#316856]/40 text-[11px] font-medium text-[#90cbb7]">Gelin Başı</span>
+</div>
+<button class="h-8 w-8 flex items-center justify-center rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-black transition-colors">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<nav class="fixed bottom-0 left-0 w-full bg-[#10231d]/90 backdrop-blur-lg border-t border-[#316856]/30 pb- safe-area-bottom z-50">
+<div class="flex justify-around items-center h-20 px-2">
+<a class="flex flex-col items-center justify-center w-full gap-1 group relative top-0" href="#">
+<div class="absolute -top-10 bg-gradient-to-t from-primary/10 to-transparent w-full h-10 pointer-events-none"></div>
+<div class="bg-primary/10 rounded-full px-5 py-1 mb-0.5 shadow-glow">
+<span class="material-symbols-outlined text-primary text-[26px] fill-1">explore</span>
+</div>
+<span class="text-[10px] font-bold text-primary">Keşfet</span>
+</a>
+<a class="flex flex-col items-center justify-center w-full gap-1 group" href="#">
+<span class="material-symbols-outlined text-[#5c8b7b] group-hover:text-white transition-colors text-[26px]">calendar_month</span>
+<span class="text-[10px] font-semibold text-[#5c8b7b] group-hover:text-white transition-colors">Randevularım</span>
+</a>
+<a class="flex flex-col items-center justify-center w-full gap-1 group" href="#">
+<span class="material-symbols-outlined text-[#5c8b7b] group-hover:text-white transition-colors text-[26px]">person</span>
+<span class="text-[10px] font-semibold text-[#5c8b7b] group-hover:text-white transition-colors">Profil</span>
+</a>
+</div>
+</nav>
+
+</body></html>

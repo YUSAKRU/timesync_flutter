@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Profilim - TimeSync</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0df2a6",
+                        "background-light": "#f5f8f7",
+                        "background-dark": "#10221c", // Deep Emerald/Charcoal
+                        "card-dark": "#182c25", // Slightly lighter for cards
+                        "secondary-text": "#90cbb7",
+                        "danger": "#ef4444",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem", 
+                        "lg": "1.5rem", 
+                        "xl": "2rem", 
+                        "2xl": "2.5rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        "glow": "0 0 20px rgba(13, 242, 166, 0.15)",
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: "Plus Jakarta Sans", sans-serif;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .fill-1 { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white overflow-x-hidden selection:bg-primary selection:text-black pb-28">
+<header class="relative pt-8 pb-6 px-6 flex flex-col items-center justify-center bg-gradient-to-b from-card-dark to-transparent">
+<button class="absolute top-6 right-6 p-2 rounded-full hover:bg-white/5 transition-colors text-secondary-text">
+<span class="material-symbols-outlined text-2xl">notifications</span>
+</button>
+<div class="relative mb-4 group cursor-pointer">
+<div class="absolute -inset-1 bg-gradient-to-tr from-primary to-[#0b8c66] rounded-full blur opacity-40 group-hover:opacity-75 transition duration-500"></div>
+<div class="w-28 h-28 rounded-full p-1 bg-background-dark relative">
+<div class="w-full h-full rounded-full overflow-hidden bg-card-dark">
+<img alt="Profil Fotoğrafı" class="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnKHbNv1aW5iWA2Iwr_2mgKTo0Dj8pd1S6sEWLUumwuQmYBb7jxmpfiZ7ihPHnYUmxVsygxECRaKoi4T_pEjA8jD-0W_uDDCNdOehOFLA2Z5yTnuZ45l2NmbRuBtgE8DpaNGpi--_IaUlp2NQvpccInjeR5k-uRnHUGgCuCa2GJ9Inj9EVSvcmNhd8EdsxcKGL5HYIHW4HFfkKuSF92KkilzWQ0frBtj8KFkF1bXvnLT6HN_mkJJL1m6E7qoEPheyRt-h6KSyOe1I"/>
+</div>
+</div>
+<div class="absolute bottom-1 right-1 bg-primary text-background-dark p-1.5 rounded-full shadow-lg border-2 border-background-dark">
+<span class="material-symbols-outlined text-lg font-bold block">edit</span>
+</div>
+</div>
+<h1 class="text-3xl font-bold text-white mb-1 tracking-tight text-center">Merhaba, Burak</h1>
+<p class="text-secondary-text text-sm font-medium">Gold Üye</p>
+</header>
+<main class="px-5 flex flex-col gap-6">
+<section>
+<div class="flex items-center justify-between mb-3 px-1">
+<h2 class="text-lg font-bold text-white flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">badge</span>
+                    Profil Bilgileri
+                </h2>
+<button class="text-primary text-xs font-bold bg-primary/10 px-3 py-1.5 rounded-full hover:bg-primary/20 transition-colors">Düzenle</button>
+</div>
+<div class="bg-card-dark rounded-[1.5rem] p-1 shadow-sm overflow-hidden border border-[#316856]/30">
+<div class="p-4 border-b border-[#316856]/30 flex items-center gap-4 group hover:bg-white/5 transition-colors">
+<div class="w-10 h-10 rounded-full bg-[#10231d] flex items-center justify-center text-secondary-text shrink-0">
+<span class="material-symbols-outlined text-[20px]">person</span>
+</div>
+<div class="flex-1 min-w-0">
+<p class="text-[10px] text-secondary-text font-bold uppercase tracking-wider mb-0.5">Ad Soyad</p>
+<p class="text-white font-medium text-sm truncate">Burak Yılmaz</p>
+</div>
+</div>
+<div class="p-4 border-b border-[#316856]/30 flex items-center gap-4 group hover:bg-white/5 transition-colors">
+<div class="w-10 h-10 rounded-full bg-[#10231d] flex items-center justify-center text-secondary-text shrink-0">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</div>
+<div class="flex-1 min-w-0">
+<p class="text-[10px] text-secondary-text font-bold uppercase tracking-wider mb-0.5">E-posta</p>
+<p class="text-white font-medium text-sm truncate">burak@example.com</p>
+</div>
+</div>
+<div class="p-4 flex items-center gap-4 group hover:bg-white/5 transition-colors">
+<div class="w-10 h-10 rounded-full bg-[#10231d] flex items-center justify-center text-secondary-text shrink-0">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</div>
+<div class="flex-1 min-w-0">
+<p class="text-[10px] text-secondary-text font-bold uppercase tracking-wider mb-0.5">Telefon</p>
+<p class="text-white font-medium text-sm truncate">+90 555 123 45 67</p>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-lg font-bold text-white mb-3 px-1 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">payments</span>
+                Ödeme Yöntemleri
+            </h2>
+<div class="bg-gradient-to-br from-[#2a4d41] to-[#182c25] rounded-[1.5rem] p-5 border border-[#316856]/50 relative overflow-hidden group shadow-lg">
+<div class="absolute -right-6 -bottom-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl group-hover:bg-primary/15 transition-colors duration-500"></div>
+<div class="absolute -left-6 -top-10 w-32 h-32 bg-white/5 rounded-full blur-2xl"></div>
+<div class="relative z-10 flex flex-col h-full justify-between gap-6">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-white/90 text-3xl">credit_card</span>
+<div class="flex items-center gap-2">
+<span class="bg-primary/20 text-primary text-[10px] font-bold px-2 py-0.5 rounded-md border border-primary/20">VARSAYILAN</span>
+</div>
+</div>
+<div>
+<p class="text-secondary-text text-xs mb-1 font-medium">Burak Yılmaz</p>
+<p class="text-white text-xl font-mono tracking-widest drop-shadow-md">•••• •••• •••• 4289</p>
+</div>
+<div class="flex justify-between items-end border-t border-white/10 pt-3 mt-1">
+<p class="text-xs text-secondary-text/80 font-medium">Son Kul. 12/28</p>
+<button class="text-primary text-xs font-bold hover:text-white transition-colors flex items-center gap-1">
+                            Yönet <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-lg font-bold text-white mb-3 px-1 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">notifications</span>
+                Bildirim Tercihleri
+            </h2>
+<div class="bg-card-dark rounded-[1.5rem] p-1 border border-[#316856]/30">
+<div class="p-4 border-b border-[#316856]/30 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-[#10231d] flex items-center justify-center text-primary/80">
+<span class="material-symbols-outlined text-[20px] fill-1">event_available</span>
+</div>
+<div>
+<p class="text-white font-bold text-sm">Randevu Hatırlatıcı</p>
+<p class="text-secondary-text text-xs mt-0.5">Randevudan 1 saat önce</p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-[#10231d] peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-secondary-text after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary peer-checked:after:bg-white"></div>
+</label>
+</div>
+<div class="p-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-[#10231d] flex items-center justify-center text-primary/80">
+<span class="material-symbols-outlined text-[20px] fill-1">local_offer</span>
+</div>
+<div>
+<p class="text-white font-bold text-sm">Kampanyalar</p>
+<p class="text-secondary-text text-xs mt-0.5">Özel indirim fırsatları</p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-[#10231d] peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-secondary-text after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary peer-checked:after:bg-white"></div>
+</label>
+</div>
+</div>
+</section>
+<button class="w-full py-4 rounded-[1.5rem] bg-[#1f362e] border border-danger/20 text-danger font-bold flex items-center justify-center gap-2 hover:bg-danger/10 transition-colors active:scale-95 duration-200 mt-2 shadow-lg">
+<span class="material-symbols-outlined">logout</span>
+            Çıkış Yap
+        </button>
+</main>
+<nav class="fixed bottom-0 left-0 w-full bg-[#10231d]/90 backdrop-blur-lg border-t border-[#316856]/30 pb- safe-area-bottom z-50">
+<div class="flex justify-around items-center h-20 px-2">
+<a class="flex flex-col items-center justify-center w-full gap-1 group" href="#">
+<span class="material-symbols-outlined text-[#5c8b7b] group-hover:text-white transition-colors text-[26px]">explore</span>
+<span class="text-[10px] font-semibold text-[#5c8b7b] group-hover:text-white transition-colors">Keşfet</span>
+</a>
+<a class="flex flex-col items-center justify-center w-full gap-1 group" href="#">
+<span class="material-symbols-outlined text-[#5c8b7b] group-hover:text-white transition-colors text-[26px]">calendar_month</span>
+<span class="text-[10px] font-semibold text-[#5c8b7b] group-hover:text-white transition-colors">Randevularım</span>
+</a>
+<a class="flex flex-col items-center justify-center w-full gap-1 group relative top-0" href="#">
+<div class="absolute -top-10 bg-gradient-to-t from-primary/10 to-transparent w-full h-10 pointer-events-none"></div>
+<div class="bg-primary/10 rounded-full px-5 py-1 mb-0.5 shadow-[0_0_15px_rgba(13,242,166,0.2)]">
+<span class="material-symbols-outlined text-primary text-[26px] fill-1">person</span>
+</div>
+<span class="text-[10px] font-bold text-primary">Profil</span>
+</a>
+</div>
+</nav>
+</body></html>

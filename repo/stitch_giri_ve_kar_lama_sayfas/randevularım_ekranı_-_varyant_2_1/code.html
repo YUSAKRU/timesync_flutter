@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Randevularım - TimeSync</title>
+<!-- Google Fonts: Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0df2a6",
+                        "background-light": "#f5f8f7",
+                        "background-dark": "#10221c", // Deep Emerald/Charcoal
+                        "card-dark": "#182c25", // Slightly lighter for cards
+                        "secondary-text": "#90cbb7",
+                        "danger": "#ef4444",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem", 
+                        "lg": "1.5rem", 
+                        "xl": "2rem", 
+                        "2xl": "2.5rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        "glow": "0 0 20px rgba(13, 242, 166, 0.15)",
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: "Plus Jakarta Sans", sans-serif;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white overflow-x-hidden selection:bg-primary selection:text-black pb-24">
+<!-- Header -->
+<header class="sticky top-0 z-20 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md pt-4 pb-2">
+<div class="flex items-center justify-between px-6 mb-4">
+<h1 class="text-2xl font-bold tracking-tight">Randevularım</h1>
+<button class="p-2 rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-2xl">notifications</span>
+</button>
+</div>
+<!-- Tabs -->
+<div class="flex border-b border-[#316856]/30 px-6 justify-between gap-4">
+<button class="flex flex-1 flex-col items-center justify-center border-b-[3px] border-primary pb-3 transition-all">
+<span class="text-white text-sm font-bold tracking-wide">Yaklaşan</span>
+</button>
+<button class="flex flex-1 flex-col items-center justify-center border-b-[3px] border-transparent pb-3 hover:text-white transition-all group">
+<span class="text-[#5c8b7b] group-hover:text-[#90cbb7] text-sm font-bold tracking-wide">Geçmiş</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="px-5 mt-6 flex flex-col gap-8">
+<!-- Active Appointment Card (Ticket Style) -->
+<div class="relative group">
+<!-- Glow effect -->
+<div class="absolute -inset-0.5 bg-gradient-to-br from-primary/30 to-transparent rounded-[2rem] blur opacity-75 group-hover:opacity-100 transition duration-500"></div>
+<div class="relative bg-card-dark rounded-[1.8rem] overflow-hidden shadow-glow">
+<!-- Top Section: Info & QR -->
+<div class="p-6 pb-5 flex justify-between items-start gap-4">
+<!-- Left: Info -->
+<div class="flex flex-col gap-1 flex-1">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-wider w-fit mb-2 border border-primary/20">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                            Aktif
+                        </span>
+<h2 class="text-2xl font-bold text-white leading-tight">Makas Sanat</h2>
+<p class="text-secondary-text text-sm font-medium">Saç Kesimi</p>
+<div class="flex items-center gap-2 mt-3 text-primary">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+<p class="text-lg font-bold">Bugün, 14:30</p>
+</div>
+</div>
+<!-- Right: QR Code -->
+<div class="flex flex-col items-center gap-2">
+<div class="bg-white p-2 rounded-xl shadow-lg w-24 h-24 flex items-center justify-center">
+<img alt="Check-in QR Code pattern" class="w-full h-full object-contain mix-blend-multiply opacity-90" data-alt="Black and white QR code pattern for appointment check-in" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWZPSYO7p5gVHG3lBalqoCZkG8kplPq-zx0DHJLdmrD_1b9f2DMS2LwxM7XrBme8ug8ALksgt5qJFOKT0LQdIO3jSPPhVS3Eut994nJCDghil4PsE3UbZ4sf65woyBJSnw0g5z8BWnsEIBn23TVtAwD7r5KYLPO5bOPbCx2SkfxwsmXjkS8_Puv-CmSiFZECyCbgLC8vMo-r_Zk7hCIfw11mDSuNOfTKrhchxyYyzouIcyfzouq58dZ4bh4E_iSnFmYf-Zq3wWJac"/>
+</div>
+<span class="text-[10px] text-secondary-text font-bold uppercase tracking-widest text-center">Girişte<br/>Okutun</span>
+</div>
+</div>
+<!-- Dashed Divider -->
+<div class="relative flex items-center justify-between px-2">
+<div class="w-4 h-8 bg-background-dark rounded-r-full"></div>
+<div class="flex-1 border-t-2 border-dashed border-[#316856]/40 mx-2"></div>
+<div class="w-4 h-8 bg-background-dark rounded-l-full"></div>
+</div>
+<!-- Bottom Section: Actions -->
+<div class="px-5 py-5 flex items-center gap-3">
+<button class="flex-1 flex items-center justify-center gap-2 h-12 rounded-full border border-primary/40 text-primary hover:bg-primary/10 transition-colors text-sm font-bold tracking-wide active:scale-95 duration-200">
+<span class="material-symbols-outlined text-[18px]">near_me</span>
+                        Yol Tarifi
+                    </button>
+<button class="h-12 px-6 rounded-full text-danger hover:bg-danger/10 transition-colors text-sm font-bold tracking-wide active:scale-95 duration-200">
+                        İptal Et
+                    </button>
+</div>
+</div>
+</div>
+<!-- Upcoming Section -->
+<div>
+<h3 class="text-white text-lg font-bold mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-text">calendar_month</span>
+                Gelecek Hafta
+            </h3>
+<div class="flex flex-col gap-4">
+<!-- Upcoming Card 1 -->
+<div class="flex items-center p-4 bg-card-dark rounded-2xl hover:bg-[#1f362e] transition-colors border border-transparent hover:border-[#316856]/50">
+<div class="h-14 w-14 rounded-xl bg-gray-700 bg-cover bg-center shrink-0 shadow-inner" data-alt="Relaxing spa interior with stones and candles" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC4zhVE9fhTQ8ACCziRD7YJzpfvxG7UoxqdLg0HqviVjZUnFvMtbes8akWocNmd7xs5VNyMLkmScmzNBtb8UM-MmnzJJRWtl-jiwFkcZ0YlW7MG2cqrTwoOzRddd3Jw6yx6_6AwX35-ofo60F26OfpSXuxMFs9bQKdXXT8uC1q80KQ6Trg6S2y6lyKnvo-XISpiFmgj6PeQ5yKiX642fpdkNQ-JSunRcINvfIPF7J9sfGw7w6Pc6escrXQLYehdODO6wuU9DUn6qB8");'>
+</div>
+<div class="ml-4 flex-1 min-w-0">
+<div class="flex justify-between items-start">
+<h4 class="text-white font-bold text-base truncate">Zen Spa Merkezi</h4>
+</div>
+<p class="text-secondary-text text-xs truncate mt-0.5">Masaj Terapisi</p>
+<p class="text-white text-xs font-semibold mt-1.5 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-[#5c8b7b]"></span>
+                            Çarşamba, 10:00
+                        </p>
+</div>
+<button class="h-10 w-10 rounded-full bg-[#10231d] flex items-center justify-center text-secondary-text hover:text-white hover:bg-primary/20 transition-colors ml-2">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+<!-- Upcoming Card 2 -->
+<div class="flex items-center p-4 bg-card-dark rounded-2xl hover:bg-[#1f362e] transition-colors border border-transparent hover:border-[#316856]/50 opacity-80">
+<div class="h-14 w-14 rounded-xl bg-gray-700 bg-cover bg-center shrink-0 shadow-inner" data-alt="Modern dentist chair and equipment" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBTa-8-0bzaKIaAqTyg13FLNvntoOmv3Ldj7LAm9Xheov15Lm_uA3ECHwZELwUWDaCkSsc9dFVtPkHbzAd66M9-zPQUNGiSKlC7sEwQ1lNS5B8fwXskwn-C-SBN-QhtnqVdy7mvZt64BmvC2javcmW19ELj5S0hVqIPDvR2IvSy0yB3ywVX6lusdznX4t4IYXXkCpyxtGUlXThFQqt0b9r8qHZSNfQmviQ2FK4Z67H6px3f8tulV4vBMRaBZLa0LT-RItj_PY9GJh8");'>
+</div>
+<div class="ml-4 flex-1 min-w-0">
+<div class="flex justify-between items-start">
+<h4 class="text-white font-bold text-base truncate">Dentist Plus</h4>
+</div>
+<p class="text-secondary-text text-xs truncate mt-0.5">Diş Kontrolü</p>
+<p class="text-white text-xs font-semibold mt-1.5 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-[#5c8b7b]"></span>
+                            14 Kasım, 15:30
+                        </p>
+</div>
+<button class="h-10 w-10 rounded-full bg-[#10231d] flex items-center justify-center text-secondary-text hover:text-white hover:bg-primary/20 transition-colors ml-2">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation -->
+<nav class="fixed bottom-0 left-0 w-full bg-[#10231d]/90 backdrop-blur-lg border-t border-[#316856]/30 pb- safe-area-bottom z-50">
+<div class="flex justify-around items-center h-20 px-2">
+<!-- Discover -->
+<a class="flex flex-col items-center justify-center w-full gap-1 group" href="#">
+<span class="material-symbols-outlined text-[#5c8b7b] group-hover:text-white transition-colors text-[26px]">explore</span>
+<span class="text-[10px] font-semibold text-[#5c8b7b] group-hover:text-white transition-colors">Keşfet</span>
+</a>
+<!-- Appointments (Active) -->
+<a class="flex flex-col items-center justify-center w-full gap-1 group relative top-0" href="#">
+<div class="absolute -top-10 bg-gradient-to-t from-primary/10 to-transparent w-full h-10 pointer-events-none"></div>
+<div class="bg-primary/10 rounded-full px-5 py-1 mb-0.5">
+<span class="material-symbols-outlined text-primary text-[26px] fill-1">calendar_month</span>
+</div>
+<span class="text-[10px] font-bold text-primary">Randevularım</span>
+</a>
+<!-- Profile -->
+<a class="flex flex-col items-center justify-center w-full gap-1 group" href="#">
+<span class="material-symbols-outlined text-[#5c8b7b] group-hover:text-white transition-colors text-[26px]">person</span>
+<span class="text-[10px] font-semibold text-[#5c8b7b] group-hover:text-white transition-colors">Profil</span>
+</a>
+</div>
+</nav>
+<style>
+        .fill-1 { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</body></html>

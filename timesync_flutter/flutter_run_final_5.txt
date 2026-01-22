@@ -1,0 +1,677 @@
+Launching lib/main.dart on 2412DPC0AG in debug mode...
+Running Gradle task 'assembleDebug'...                           2,486ms
+✓ Built build/app/outputs/flutter-apk/app-debug.apk
+Installing build/app/outputs/flutter-apk/app-debug.apk...       
+D/FlutterJNI( 6989): Beginning load of flutter...
+D/FlutterJNI( 6989): flutter (null) was loaded normally!
+I/flutter ( 6989): [IMPORTANT:flutter/shell/platform/android/android_context_vk_impeller.cc(62)] Using the Impeller rendering backend (Vulkan).
+I/flutter ( 6989): ⚠️ Firebase initialization warning: PlatformException(java.lang.Exception: Failed to load FirebaseOptions from resource. Check that you have defined values.xml correctly., Exception, Cause: null, Stacktrace: java.lang.Exception: Failed to load FirebaseOptions from resource. Check that you have defined values.xml correctly.
+I/flutter ( 6989): 	at io.flutter.plugins.firebase.core.FlutterFirebaseCorePlugin.lambda$optionsFromResource$5(FlutterFirebaseCorePlugin.java:222)
+I/flutter ( 6989): 	at io.flutter.plugins.firebase.core.FlutterFirebaseCorePlugin.$r8$lambda$UKjIMRLnh50mCq5Rg7c5X1_2d5w(Unknown Source:0)
+I/flutter ( 6989): 	at io.flutter.plugins.firebase.core.FlutterFirebaseCorePlugin$$ExternalSyntheticLambda3.run(D8$$SyntheticClass:0)
+I/flutter ( 6989): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+I/flutter ( 6989): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+I/flutter ( 6989): 	at java.lang.Thread.run(Thread.java:1119)
+I/flutter ( 6989): , null)
+I/flutter ( 6989): ⚠️ FCM initialization skipped: [core/no-app] No Firebase App '[DEFAULT]' has been created - call Firebase.initializeApp()
+I/flutter ( 6989): ✅ Notification Service initialized
+Installing build/app/outputs/flutter-apk/app-debug.apk...           6.5s
+D/FlutterJNI( 7807): Beginning load of flutter...
+D/FlutterJNI( 7807): flutter (null) was loaded normally!
+I/flutter ( 7807): [IMPORTANT:flutter/shell/platform/android/android_context_vk_impeller.cc(62)] Using the Impeller rendering backend (Vulkan).
+I/flutter ( 7807): ⚠️ Firebase initialization warning: PlatformException(java.lang.Exception: Failed to load FirebaseOptions from resource. Check that you have defined values.xml correctly., Exception, Cause: null, Stacktrace: java.lang.Exception: Failed to load FirebaseOptions from resource. Check that you have defined values.xml correctly.
+I/flutter ( 7807): 	at io.flutter.plugins.firebase.core.FlutterFirebaseCorePlugin.lambda$optionsFromResource$5(FlutterFirebaseCorePlugin.java:222)
+I/flutter ( 7807): 	at io.flutter.plugins.firebase.core.FlutterFirebaseCorePlugin.$r8$lambda$UKjIMRLnh50mCq5Rg7c5X1_2d5w(Unknown Source:0)
+I/flutter ( 7807): 	at io.flutter.plugins.firebase.core.FlutterFirebaseCorePlugin$$ExternalSyntheticLambda3.run(D8$$SyntheticClass:0)
+I/flutter ( 7807): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+I/flutter ( 7807): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+I/flutter ( 7807): 	at java.lang.Thread.run(Thread.java:1119)
+I/flutter ( 7807): , null)
+I/flutter ( 7807): ⚠️ FCM initialization skipped: [core/no-app] No Firebase App '[DEFAULT]' has been created - call Firebase.initializeApp()
+I/flutter ( 7807): ✅ Notification Service initialized
+Syncing files to device 2412DPC0AG...                               62ms
+
+Flutter run key commands.
+r Hot reload. 🔥🔥🔥
+R Hot restart.
+h List all available interactive commands.
+d Detach (terminate "flutter run" but leave application running).
+c Clear the screen
+q Quit (terminate the application on the device).
+
+A Dart VM Service on 2412DPC0AG is available at: http://127.0.0.1:34159/Wg0-FNGn6qo=/
+The Flutter DevTools debugger and profiler on 2412DPC0AG is available at: http://127.0.0.1:34159/Wg0-FNGn6qo=/devtools/?uri=ws://127.0.0.1:34159/Wg0-FNGn6qo=/ws
+I/Choreographer( 7807): Skipped 63 frames!  The application may be doing too much work on its main thread.
+D/UserSceneDetector( 7807): invoke error.
+W/Looper  ( 7807): PerfMonitor doFrame : time=1ms vsyncFrame=15079424 latency=528ms procState=-1 historyMsgCount=1
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+I/GrallocExtra( 7807): gralloc_extra_query:is_SW3D 0
+I/GrallocExtra( 7807): gralloc_extra_query:is_SW3D 0
+W/libc    ( 7807): Access denied finding property "ro.vendor.display.iris_x7.support"
+D/BLASTBufferQueue( 7807): [SurfaceView[com.example.timesync_flutter/com.example.timesync_flutter.MainActivity]#1](f:0,a:1) acquireNextBufferLocked size=1220x2712 mFrameNumber=1 applyTransaction=true mTimestamp=301883248840608(auto) mPendingTransactions.size=0 graphicBufferId=33530809679882 transform=0
+D/LibMBrainProxy( 7807): Init Paramters
+W/imesync_flutter( 7807): AIBinder_linkToDeath is being called with a non-null cookie and no onUnlink callback set. This might not be intended. AIBinder_DeathRecipient_setOnUnlinked should be called first.
+D/LibMBrainProxy( 7807): SDK(1.1.1) connect to server
+D/LibMBrainProxy( 7807): Init MBrainSDK
+D/LibMBrainProxy( 7807): MBrain support? 0
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+D/UserSceneDetector( 7807): invoke error.
+D/VRI[MainActivity]( 7807): Setup new sync=wmsSync-VRI[MainActivity]#1
+D/UserSceneDetector( 7807): invoke error.
+D/HWUI    ( 7807): makeCurrent grContext:0xb40000723d30b950 reset mTextureAvailable
+D/imesync_flutter( 7807): MiuiProcessManagerServiceStub setSchedFifo
+I/MiuiProcessManagerImpl( 7807): setSchedFifo pid:7807, mode:3
+W/libc    ( 7807): Access denied finding property "ro.vendor.display.iris_x7.support"
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+D/BLASTBufferQueue( 7807): [VRI[MainActivity]#0](f:0,a:1) acquireNextBufferLocked size=1220x2712 mFrameNumber=1 applyTransaction=true mTimestamp=301883303541223(auto) mPendingTransactions.size=0 graphicBufferId=33530809679888 transform=0
+D/VRI[MainActivity]( 7807): vri.reportDrawFinished
+I/HandWritingStubImpl( 7807): refreshLastKeyboardType: 1
+I/HandWritingStubImpl( 7807): getCurrentKeyboardType: 1
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+I/HandWritingStubImpl( 7807): getCurrentKeyboardType: 1
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+E/LB      ( 7807): fail to open file: No such file or directory
+E/LB      ( 7807): fail to open node: No such file or directory
+W/WindowOnBackDispatcher( 7807): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher( 7807): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+D/ProfileInstaller( 7807): Installing profile for com.example.timesync_flutter
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301887613, downTime=301887613, phoneEventTime=23:42:11.342 } moveCount:0
+I/PowerHalWrapper( 7807): PowerHalWrapper.getInstance 
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301887694, downTime=301887613, phoneEventTime=23:42:11.423 } moveCount:2
+I/ScrollIdentify( 7807): on fling
+I/PowerHalWrapper( 7807): PowerHalWrapper.getInstance 
+E/imesync_flutter( 7807): FrameInsert open fail: No such file or directory
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301888857, downTime=301888857, phoneEventTime=23:42:12.586 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301888935, downTime=301888857, phoneEventTime=23:42:12.664 } moveCount:8
+I/ScrollIdentify( 7807): on fling
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301889982, downTime=301889982, phoneEventTime=23:42:13.711 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301890071, downTime=301889982, phoneEventTime=23:42:13.800 } moveCount:0
+W/WindowOnBackDispatcher( 7807): OnBackInvokedCallback is not enabled for the application.
+W/WindowOnBackDispatcher( 7807): Set 'android:enableOnBackInvokedCallback="true"' in the application manifest.
+
+══╡ EXCEPTION CAUGHT BY WIDGETS LIBRARY ╞═══════════════════════════════════════════════════════════
+The following _Exception was thrown building DiscoverScreen(dirty, dependencies:
+[UncontrolledProviderScope], state: _DiscoverScreenState#1f51d):
+Exception: StorageService not initialized
+
+The relevant error-causing widget was:
+  DiscoverScreen
+  DiscoverScreen:file:///home/yusakru/Documents/projects/sistem-analiz-ve-tasar%C4%B1m%C4%B1/timeSync/timesync_flutter/lib/presentation/navigation/main_navigation.dart:18:11
+
+When the exception was thrown, this was the stack:
+#1      _ProviderStateSubscription.read (package:riverpod/src/framework/provider_base.dart:181:28)
+#2      ConsumerStatefulElement.watch (package:flutter_riverpod/src/consumer.dart:568:8)
+#3      _DiscoverScreenState._buildBusinessCards (package:timesync_flutter/presentation/customer/discover_screen.dart:341:33)
+#4      _DiscoverScreenState.build (package:timesync_flutter/presentation/customer/discover_screen.dart:59:19)
+#5      StatefulElement.build (package:flutter/src/widgets/framework.dart:5934:27)
+#6      ConsumerStatefulElement.build (package:flutter_riverpod/src/consumer.dart:539:20)
+#7      ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5820:15)
+#8      StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5985:11)
+#9      Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#10     ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5802:5)
+#11     StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5976:11)
+#12     ComponentElement.mount (package:flutter/src/widgets/framework.dart:5796:5)
+...     Normal element mounting (25 frames)
+#37     Element.inflateWidget (package:flutter/src/widgets/framework.dart:4590:20)
+#38     MultiChildRenderObjectElement.inflateWidget (package:flutter/src/widgets/framework.dart:7269:36)
+#39     MultiChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7285:32)
+...     Normal element mounting (372 frames)
+#411    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4590:20)
+#412    MultiChildRenderObjectElement.inflateWidget (package:flutter/src/widgets/framework.dart:7269:36)
+#413    Element.updateChild (package:flutter/src/widgets/framework.dart:4059:18)
+#414    Element.updateChildren (package:flutter/src/widgets/framework.dart:4258:32)
+#415    MultiChildRenderObjectElement.update (package:flutter/src/widgets/framework.dart:7302:17)
+#416    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#417    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#418    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5985:11)
+#419    Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#420    StatefulElement.update (package:flutter/src/widgets/framework.dart:6010:5)
+#421    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#422    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#423    Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#424    ProxyElement.update (package:flutter/src/widgets/framework.dart:6152:5)
+#425    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#426    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#427    Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#428    ProxyElement.update (package:flutter/src/widgets/framework.dart:6152:5)
+#429    _InheritedNotifierElement.update (package:flutter/src/widgets/inherited_notifier.dart:108:11)
+#430    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#431    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#432    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5985:11)
+#433    Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#434    StatefulElement.update (package:flutter/src/widgets/framework.dart:6010:5)
+#435    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#436    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#437    Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#438    ProxyElement.update (package:flutter/src/widgets/framework.dart:6152:5)
+#439    _InheritedNotifierElement.update (package:flutter/src/widgets/inherited_notifier.dart:108:11)
+#440    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#441    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#442    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5985:11)
+#443    Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#444    StatefulElement.update (package:flutter/src/widgets/framework.dart:6010:5)
+#445    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#446    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#447    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5985:11)
+#448    Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#449    StatefulElement.update (package:flutter/src/widgets/framework.dart:6010:5)
+#450    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#451    SingleChildRenderObjectElement.update (package:flutter/src/widgets/framework.dart:7125:14)
+#452    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#453    SingleChildRenderObjectElement.update (package:flutter/src/widgets/framework.dart:7125:14)
+#454    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#455    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#456    Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#457    ProxyElement.update (package:flutter/src/widgets/framework.dart:6152:5)
+#458    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#459    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#460    Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#461    ProxyElement.update (package:flutter/src/widgets/framework.dart:6152:5)
+#462    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#463    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#464    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5985:11)
+#465    Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#466    BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750:15)
+#467    BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807:11)
+#468    BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111:18)
+#469    WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1262:21)
+#470    RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#471    SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1434:15)
+#472    SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1347:9)
+#473    SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1200:5)
+#474    _invoke (dart:ui/hooks.dart:356:13)
+#475    PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:444:5)
+#476    _drawFrame (dart:ui/hooks.dart:328:31)
+#477    ProviderElementBase.watch (package:riverpod/src/framework/element.dart:742:20)
+#478    discoverProvider.<anonymous closure> (package:timesync_flutter/core/providers/customer/discover_provider.dart:93:30)
+#479    ProviderContainer.listen (package:riverpod/src/framework/container.dart:280:21)
+#480    ConsumerStatefulElement.watch.<anonymous closure> (package:flutter_riverpod/src/consumer.dart:564:25)
+#481    _LinkedHashMapMixin.putIfAbsent (dart:_compact_hash:675:23)
+#482    ConsumerStatefulElement.watch (package:flutter_riverpod/src/consumer.dart:557:26)
+#483    _DiscoverScreenState._buildBusinessCards (package:timesync_flutter/presentation/customer/discover_screen.dart:341:33)
+#484    _DiscoverScreenState.build (package:timesync_flutter/presentation/customer/discover_screen.dart:59:19)
+#485    StatefulElement.build (package:flutter/src/widgets/framework.dart:5934:27)
+#486    ConsumerStatefulElement.build (package:flutter_riverpod/src/consumer.dart:539:20)
+#487    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5820:15)
+#488    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5985:11)
+#489    Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#490    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5802:5)
+#491    StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5976:11)
+#492    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5796:5)
+...     Normal element mounting (25 frames)
+#517    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4590:20)
+#518    MultiChildRenderObjectElement.inflateWidget (package:flutter/src/widgets/framework.dart:7269:36)
+#519    MultiChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7285:32)
+...     Normal element mounting (372 frames)
+#891    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4590:20)
+#892    MultiChildRenderObjectElement.inflateWidget (package:flutter/src/widgets/framework.dart:7269:36)
+#893    Element.updateChild (package:flutter/src/widgets/framework.dart:4059:18)
+#894    Element.updateChildren (package:flutter/src/widgets/framework.dart:4258:32)
+#895    MultiChildRenderObjectElement.update (package:flutter/src/widgets/framework.dart:7302:17)
+#896    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#897    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#898    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5985:11)
+#899    Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#900    StatefulElement.update (package:flutter/src/widgets/framework.dart:6010:5)
+#901    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#902    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#903    Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#904    ProxyElement.update (package:flutter/src/widgets/framework.dart:6152:5)
+#905    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#906    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#907    Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#908    ProxyElement.update (package:flutter/src/widgets/framework.dart:6152:5)
+#909    _InheritedNotifierElement.update (package:flutter/src/widgets/inherited_notifier.dart:108:11)
+#910    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#911    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#912    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5985:11)
+#913    Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#914    StatefulElement.update (package:flutter/src/widgets/framework.dart:6010:5)
+#915    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#916    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#917    Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#918    ProxyElement.update (package:flutter/src/widgets/framework.dart:6152:5)
+#919    _InheritedNotifierElement.update (package:flutter/src/widgets/inherited_notifier.dart:108:11)
+#920    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#921    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#922    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5985:11)
+#923    Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#924    StatefulElement.update (package:flutter/src/widgets/framework.dart:6010:5)
+#925    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#926    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#927    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5985:11)
+#928    Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#929    StatefulElement.update (package:flutter/src/widgets/framework.dart:6010:5)
+#930    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#931    SingleChildRenderObjectElement.update (package:flutter/src/widgets/framework.dart:7125:14)
+#932    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#933    SingleChildRenderObjectElement.update (package:flutter/src/widgets/framework.dart:7125:14)
+#934    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#935    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#936    Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#937    ProxyElement.update (package:flutter/src/widgets/framework.dart:6152:5)
+#938    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#939    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#940    Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#941    ProxyElement.update (package:flutter/src/widgets/framework.dart:6152:5)
+#942    Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#943    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#944    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5985:11)
+#945    Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#946    BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750:15)
+#947    BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807:11)
+#948    BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111:18)
+#949    WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1262:21)
+#950    RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#951    SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1434:15)
+#952    SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1347:9)
+#953    SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1200:5)
+#954    _invoke (dart:ui/hooks.dart:356:13)
+#955    PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:444:5)
+#956    _drawFrame (dart:ui/hooks.dart:328:31)
+#957    cacheManagerProvider.<anonymous closure> (package:timesync_flutter/core/providers/storage_providers.dart:28:5)
+#958    ProviderElementBase.watch (package:riverpod/src/framework/element.dart:714:12)
+#959    discoverProvider.<anonymous closure> (package:timesync_flutter/core/providers/customer/discover_provider.dart:93:30)
+#960    ProviderContainer.listen (package:riverpod/src/framework/container.dart:280:21)
+#961    ConsumerStatefulElement.watch.<anonymous closure> (package:flutter_riverpod/src/consumer.dart:564:25)
+#962    _LinkedHashMapMixin.putIfAbsent (dart:_compact_hash:675:23)
+#963    ConsumerStatefulElement.watch (package:flutter_riverpod/src/consumer.dart:557:26)
+#964    _DiscoverScreenState._buildBusinessCards (package:timesync_flutter/presentation/customer/discover_screen.dart:341:33)
+#965    _DiscoverScreenState.build (package:timesync_flutter/presentation/customer/discover_screen.dart:59:19)
+#966    StatefulElement.build (package:flutter/src/widgets/framework.dart:5934:27)
+#967    ConsumerStatefulElement.build (package:flutter_riverpod/src/consumer.dart:539:20)
+#968    ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5820:15)
+#969    StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5985:11)
+#970    Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#971    ComponentElement._firstBuild (package:flutter/src/widgets/framework.dart:5802:5)
+#972    StatefulElement._firstBuild (package:flutter/src/widgets/framework.dart:5976:11)
+#973    ComponentElement.mount (package:flutter/src/widgets/framework.dart:5796:5)
+...     Normal element mounting (25 frames)
+#998    Element.inflateWidget (package:flutter/src/widgets/framework.dart:4590:20)
+#999    MultiChildRenderObjectElement.inflateWidget (package:flutter/src/widgets/framework.dart:7269:36)
+#1000   MultiChildRenderObjectElement.mount (package:flutter/src/widgets/framework.dart:7285:32)
+...     Normal element mounting (372 frames)
+#1372   Element.inflateWidget (package:flutter/src/widgets/framework.dart:4590:20)
+#1373   MultiChildRenderObjectElement.inflateWidget (package:flutter/src/widgets/framework.dart:7269:36)
+#1374   Element.updateChild (package:flutter/src/widgets/framework.dart:4059:18)
+#1375   Element.updateChildren (package:flutter/src/widgets/framework.dart:4258:32)
+#1376   MultiChildRenderObjectElement.update (package:flutter/src/widgets/framework.dart:7302:17)
+#1377   Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#1378   ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#1379   StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5985:11)
+#1380   Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#1381   StatefulElement.update (package:flutter/src/widgets/framework.dart:6010:5)
+#1382   Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#1383   ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#1384   Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#1385   ProxyElement.update (package:flutter/src/widgets/framework.dart:6152:5)
+#1386   Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#1387   ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#1388   Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#1389   ProxyElement.update (package:flutter/src/widgets/framework.dart:6152:5)
+#1390   _InheritedNotifierElement.update (package:flutter/src/widgets/inherited_notifier.dart:108:11)
+#1391   Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#1392   ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#1393   StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5985:11)
+#1394   Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#1395   StatefulElement.update (package:flutter/src/widgets/framework.dart:6010:5)
+#1396   Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#1397   ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#1398   Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#1399   ProxyElement.update (package:flutter/src/widgets/framework.dart:6152:5)
+#1400   _InheritedNotifierElement.update (package:flutter/src/widgets/inherited_notifier.dart:108:11)
+#1401   Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#1402   ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#1403   StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5985:11)
+#1404   Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#1405   StatefulElement.update (package:flutter/src/widgets/framework.dart:6010:5)
+#1406   Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#1407   ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#1408   StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5985:11)
+#1409   Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#1410   StatefulElement.update (package:flutter/src/widgets/framework.dart:6010:5)
+#1411   Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#1412   SingleChildRenderObjectElement.update (package:flutter/src/widgets/framework.dart:7125:14)
+#1413   Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#1414   SingleChildRenderObjectElement.update (package:flutter/src/widgets/framework.dart:7125:14)
+#1415   Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#1416   ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#1417   Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#1418   ProxyElement.update (package:flutter/src/widgets/framework.dart:6152:5)
+#1419   Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#1420   ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#1421   Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#1422   ProxyElement.update (package:flutter/src/widgets/framework.dart:6152:5)
+#1423   Element.updateChild (package:flutter/src/widgets/framework.dart:4037:15)
+#1424   ComponentElement.performRebuild (package:flutter/src/widgets/framework.dart:5844:16)
+#1425   StatefulElement.performRebuild (package:flutter/src/widgets/framework.dart:5985:11)
+#1426   Element.rebuild (package:flutter/src/widgets/framework.dart:5532:7)
+#1427   BuildScope._tryRebuild (package:flutter/src/widgets/framework.dart:2750:15)
+#1428   BuildScope._flushDirtyElements (package:flutter/src/widgets/framework.dart:2807:11)
+#1429   BuildOwner.buildScope (package:flutter/src/widgets/framework.dart:3111:18)
+#1430   WidgetsBinding.drawFrame (package:flutter/src/widgets/binding.dart:1262:21)
+#1431   RendererBinding._handlePersistentFrameCallback (package:flutter/src/rendering/binding.dart:495:5)
+#1432   SchedulerBinding._invokeFrameCallback (package:flutter/src/scheduler/binding.dart:1434:15)
+#1433   SchedulerBinding.handleDrawFrame (package:flutter/src/scheduler/binding.dart:1347:9)
+#1434   SchedulerBinding._handleDrawFrame (package:flutter/src/scheduler/binding.dart:1200:5)
+#1435   _invoke (dart:ui/hooks.dart:356:13)
+#1436   PlatformDispatcher._drawFrame (dart:ui/platform_dispatcher.dart:444:5)
+#1437   _drawFrame (dart:ui/hooks.dart:328:31)
+
+════════════════════════════════════════════════════════════════════════════════════════════════════
+
+W/imesync_flutter( 7807): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~-QF9N-JKCzsv71x07htCKw==/com.google.android.marvin.talkback-2_wp_3gf-ff4-1gbFT5kNw==/base.apk' with 1 weak references
+W/imesync_flutter( 7807): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~-QF9N-JKCzsv71x07htCKw==/com.google.android.marvin.talkback-2_wp_3gf-ff4-1gbFT5kNw==/split_config.arm64_v8a.apk' with 1 weak references
+W/imesync_flutter( 7807): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~x9QGwPvUPPto6YUOtO_pJQ==/com.alohamobile.browser-vB9yfUQT4AdzlcP_Xpisag==/base.apk' with 1 weak references
+W/imesync_flutter( 7807): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~x9QGwPvUPPto6YUOtO_pJQ==/com.alohamobile.browser-vB9yfUQT4AdzlcP_Xpisag==/split_config.arm64_v8a.apk' with 1 weak references
+W/imesync_flutter( 7807): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~x9QGwPvUPPto6YUOtO_pJQ==/com.alohamobile.browser-vB9yfUQT4AdzlcP_Xpisag==/split_config.xxhdpi.apk' with 1 weak references
+W/imesync_flutter( 7807): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~3C32blWqjJAcJsZlb2AdcA==/com.deepl.mobiletranslator-bbJwwZDkPQlmH5vynnxQ-A==/base.apk' with 1 weak references
+W/imesync_flutter( 7807): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~3C32blWqjJAcJsZlb2AdcA==/com.deepl.mobiletranslator-bbJwwZDkPQlmH5vynnxQ-A==/split_config.arm64_v8a.apk' with 1 weak references
+W/imesync_flutter( 7807): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~3C32blWqjJAcJsZlb2AdcA==/com.deepl.mobiletranslator-bbJwwZDkPQlmH5vynnxQ-A==/split_config.xxhdpi.apk' with 1 weak references
+W/imesync_flutter( 7807): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~eGTmIq2pSyMslPsx92fshw==/com.google.android.apps.translate-X5g8hlZ09Dp3T0H8cnXJUg==/base.apk' with 1 weak references
+W/imesync_flutter( 7807): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~Q6BdWeEYCmf2pn_OyBpsmg==/com.ichi2.anki-Jmqusigd0IeowUqL6NyELQ==/base.apk' with 1 weak references
+W/imesync_flutter( 7807): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~6nGy-hv3D2RXHTNi1M9VFg==/com.opera.browser-mPOS6d11ngkHKTWucn__Bg==/base.apk' with 1 weak references
+W/imesync_flutter( 7807): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~6nGy-hv3D2RXHTNi1M9VFg==/com.opera.browser-mPOS6d11ngkHKTWucn__Bg==/split_config.arm64_v8a.apk' with 1 weak references
+W/imesync_flutter( 7807): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~6nGy-hv3D2RXHTNi1M9VFg==/com.opera.browser-mPOS6d11ngkHKTWucn__Bg==/split_config.tr.apk' with 1 weak references
+W/imesync_flutter( 7807): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~6nGy-hv3D2RXHTNi1M9VFg==/com.opera.browser-mPOS6d11ngkHKTWucn__Bg==/split_config.xxhdpi.apk' with 1 weak references
+W/imesync_flutter( 7807): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~6nGy-hv3D2RXHTNi1M9VFg==/com.opera.browser-mPOS6d11ngkHKTWucn__Bg==/split_pangle_ads.apk' with 1 weak references
+W/imesync_flutter( 7807): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~6nGy-hv3D2RXHTNi1M9VFg==/com.opera.browser-mPOS6d11ngkHKTWucn__Bg==/split_pangle_ads.config.arm64_v8a.apk' with 1 weak references
+W/imesync_flutter( 7807): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~6nGy-hv3D2RXHTNi1M9VFg==/com.opera.browser-mPOS6d11ngkHKTWucn__Bg==/split_pangle_ads.config.tr.apk' with 1 weak references
+W/imesync_flutter( 7807): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~bZgsnSGql1-BJetoiSA03Q==/io.elevenlabs.readerapp-m8HzPkdB5i_84siVhpIfQA==/base.apk' with 1 weak references
+W/imesync_flutter( 7807): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~bZgsnSGql1-BJetoiSA03Q==/io.elevenlabs.readerapp-m8HzPkdB5i_84siVhpIfQA==/split_config.arm64_v8a.apk' with 1 weak references
+W/imesync_flutter( 7807): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~bZgsnSGql1-BJetoiSA03Q==/io.elevenlabs.readerapp-m8HzPkdB5i_84siVhpIfQA==/split_config.tr.apk' with 1 weak references
+W/imesync_flutter( 7807): ApkAssets: Deleting an ApkAssets object '<empty> and /data/app/~~bZgsnSGql1-BJetoiSA03Q==/io.elevenlabs.readerapp-m8HzPkdB5i_84siVhpIfQA==/split_config.xxhdpi.apk' with 1 weak references
+Another exception was thrown: HTTP request failed, statusCode: 404, https://images.unsplash.com/photo-1622286346890-e4a488c8e4c6
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301892487, downTime=301892487, phoneEventTime=23:42:16.216 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301892572, downTime=301892487, phoneEventTime=23:42:16.301 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301893177, downTime=301893177, phoneEventTime=23:42:16.906 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301893245, downTime=301893177, phoneEventTime=23:42:16.974 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301895268, downTime=301895268, phoneEventTime=23:42:18.997 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301895323, downTime=301895268, phoneEventTime=23:42:19.052 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301895901, downTime=301895901, phoneEventTime=23:42:19.630 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301895957, downTime=301895901, phoneEventTime=23:42:19.686 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301896867, downTime=301896867, phoneEventTime=23:42:20.596 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301896908, downTime=301896867, phoneEventTime=23:42:20.637 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301897464, downTime=301897464, phoneEventTime=23:42:21.193 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301897532, downTime=301897464, phoneEventTime=23:42:21.261 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301898059, downTime=301898059, phoneEventTime=23:42:21.788 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301898130, downTime=301898059, phoneEventTime=23:42:21.859 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301898510, downTime=301898510, phoneEventTime=23:42:22.239 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301898585, downTime=301898510, phoneEventTime=23:42:22.314 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301899287, downTime=301899287, phoneEventTime=23:42:23.016 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301899343, downTime=301899287, phoneEventTime=23:42:23.072 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301899787, downTime=301899787, phoneEventTime=23:42:23.517 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301899847, downTime=301899787, phoneEventTime=23:42:23.576 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301900558, downTime=301900558, phoneEventTime=23:42:24.287 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301900591, downTime=301900558, phoneEventTime=23:42:24.320 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301901520, downTime=301901520, phoneEventTime=23:42:25.249 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301901605, downTime=301901520, phoneEventTime=23:42:25.334 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301902317, downTime=301902317, phoneEventTime=23:42:26.046 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301902447, downTime=301902317, phoneEventTime=23:42:26.176 } moveCount:14
+I/ScrollIdentify( 7807): on fling
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301903339, downTime=301903339, phoneEventTime=23:42:27.068 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301903480, downTime=301903339, phoneEventTime=23:42:27.209 } moveCount:11
+I/ScrollIdentify( 7807): on fling
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301903726, downTime=301903726, phoneEventTime=23:42:27.455 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301903831, downTime=301903726, phoneEventTime=23:42:27.560 } moveCount:9
+I/ScrollIdentify( 7807): on fling
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301904416, downTime=301904416, phoneEventTime=23:42:28.145 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301904472, downTime=301904416, phoneEventTime=23:42:28.201 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301905178, downTime=301905178, phoneEventTime=23:42:28.907 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301905275, downTime=301905178, phoneEventTime=23:42:29.004 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301905836, downTime=301905836, phoneEventTime=23:42:29.565 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301905884, downTime=301905836, phoneEventTime=23:42:29.613 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301906190, downTime=301906190, phoneEventTime=23:42:29.919 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301906518, downTime=301906190, phoneEventTime=23:42:30.247 } moveCount:34
+I/ScrollIdentify( 7807): on fling
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301906675, downTime=301906675, phoneEventTime=23:42:30.404 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301906734, downTime=301906675, phoneEventTime=23:42:30.463 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301907070, downTime=301907070, phoneEventTime=23:42:30.799 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301907151, downTime=301907070, phoneEventTime=23:42:30.880 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301907626, downTime=301907626, phoneEventTime=23:42:31.355 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301907722, downTime=301907626, phoneEventTime=23:42:31.451 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301908972, downTime=301908972, phoneEventTime=23:42:32.701 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301909046, downTime=301908972, phoneEventTime=23:42:32.775 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301909694, downTime=301909694, phoneEventTime=23:42:33.424 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301909753, downTime=301909694, phoneEventTime=23:42:33.482 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301910737, downTime=301910737, phoneEventTime=23:42:34.466 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301910818, downTime=301910737, phoneEventTime=23:42:34.547 } moveCount:0
+Another exception was thrown: HTTP request failed, statusCode: 404, https://images.unsplash.com/photo-1622286346890-e4a488c8e4c6
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301911583, downTime=301911583, phoneEventTime=23:42:35.312 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301911688, downTime=301911583, phoneEventTime=23:42:35.417 } moveCount:10
+I/ScrollIdentify( 7807): on fling
+Another exception was thrown: HTTP request failed, statusCode: 404, https://images.unsplash.com/photo-1622286346890-e4a488c8e4c6
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301911964, downTime=301911964, phoneEventTime=23:42:35.693 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301912261, downTime=301911964, phoneEventTime=23:42:35.990 } moveCount:25
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301912583, downTime=301912583, phoneEventTime=23:42:36.312 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301912679, downTime=301912583, phoneEventTime=23:42:36.408 } moveCount:10
+I/ScrollIdentify( 7807): on fling
+Another exception was thrown: HTTP request failed, statusCode: 404, https://images.unsplash.com/photo-1622286346890-e4a488c8e4c6
+Another exception was thrown: HTTP request failed, statusCode: 404, https://images.unsplash.com/photo-1622286346890-e4a488c8e4c6
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301913075, downTime=301913075, phoneEventTime=23:42:36.804 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301913156, downTime=301913075, phoneEventTime=23:42:36.885 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301913705, downTime=301913705, phoneEventTime=23:42:37.434 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301913749, downTime=301913705, phoneEventTime=23:42:37.478 } moveCount:4
+I/ScrollIdentify( 7807): on fling
+Another exception was thrown: HTTP request failed, statusCode: 404, https://images.unsplash.com/photo-1622286346890-e4a488c8e4c6
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301914294, downTime=301914294, phoneEventTime=23:42:38.023 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301914372, downTime=301914294, phoneEventTime=23:42:38.101 } moveCount:8
+I/ScrollIdentify( 7807): on fling
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301914737, downTime=301914737, phoneEventTime=23:42:38.466 } moveCount:0
+Another exception was thrown: HTTP request failed, statusCode: 404, https://images.unsplash.com/photo-1622286346890-e4a488c8e4c6
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301914960, downTime=301914737, phoneEventTime=23:42:38.689 } moveCount:9
+I/ScrollIdentify( 7807): on fling
+Another exception was thrown: HTTP request failed, statusCode: 404, https://images.unsplash.com/photo-1622286346890-e4a488c8e4c6
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301915508, downTime=301915508, phoneEventTime=23:42:39.237 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301915597, downTime=301915508, phoneEventTime=23:42:39.326 } moveCount:10
+I/ScrollIdentify( 7807): on fling
+Another exception was thrown: HTTP request failed, statusCode: 404, https://images.unsplash.com/photo-1622286346890-e4a488c8e4c6
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301915993, downTime=301915993, phoneEventTime=23:42:39.722 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301916485, downTime=301915993, phoneEventTime=23:42:40.214 } moveCount:33
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301916775, downTime=301916775, phoneEventTime=23:42:40.504 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301916842, downTime=301916775, phoneEventTime=23:42:40.571 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301917757, downTime=301917757, phoneEventTime=23:42:41.486 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301917890, downTime=301917757, phoneEventTime=23:42:41.619 } moveCount:10
+I/ScrollIdentify( 7807): on fling
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301918129, downTime=301918129, phoneEventTime=23:42:41.858 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301918345, downTime=301918129, phoneEventTime=23:42:42.074 } moveCount:19
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301918710, downTime=301918710, phoneEventTime=23:42:42.439 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301918754, downTime=301918710, phoneEventTime=23:42:42.483 } moveCount:0
+Another exception was thrown: HTTP request failed, statusCode: 400, https://lh3.googleusercontent.com/aida-public/AB6AXuA8Hfs8i19B1mHAWKKRbYc3TCd-lL0bk3I0yOWDWGHGjJKDWV1LB1xPJ-TtWxmR0kNEGtKJjm79A8VnlJ9sCCbdR5V8qiTgKwqTNA
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_DOWN, id[0]=0, pointerCount=1, eventTime=301919612, downTime=301919612, phoneEventTime=23:42:43.342 } moveCount:0
+I/MIUIInput( 7807): [MotionEvent] ViewRootImpl windowName 'com.example.timesync_flutter/com.example.timesync_flutter.MainActivity', { action=ACTION_UP, id[0]=0, pointerCount=1, eventTime=301919686, downTime=301919612, phoneEventTime=23:42:43.415 } moveCount:0

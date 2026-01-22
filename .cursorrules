@@ -1,0 +1,233 @@
+# TimeSync Flutter Project Rules
+
+## Project Context
+
+This is a Flutter-based appointment management system called TimeSync. The main Flutter project is located in the `timesync_flutter/` directory.
+
+## Critical Rules
+
+### 1. Working Directory
+
+- **ALWAYS** work in `timesync_flutter/` directory for Flutter operations
+- **NEVER** create Flutter files in the root directory
+- Terminal commands should use: `cd timesync_flutter && <command>`
+- Default terminal cwd: `${workspaceFolder}/timesync_flutter`
+
+### 2. File Structure
+
+```
+timesync_flutter/           # Main Flutter project (WORK HERE!)
+├── lib/
+│   ├── core/
+│   │   ├── constants/      # Colors, text styles, constants
+│   │   └── theme/          # Theme configuration
+│   └── presentation/       # All UI screens
+│       ├── splash/
+│       ├── welcome/
+│       ├── auth/
+│       ├── customer/       # Customer module (7 screens)
+│       ├── employee/       # Employee module (3 screens)
+│       ├── business/       # Business module (4 screens)
+│       ├── admin/          # Admin module (3 screens)
+│       └── navigation/     # Bottom navigation wrappers
+├── test/
+└── web/
+```
+
+### 3. Code Style & Standards
+
+#### Dart/Flutter
+
+- Line length: 80 characters
+- Use `const` constructors whenever possible
+- Follow Material Design 3 guidelines
+- Use semantic naming (e.g., `_buildHeader()`, `_buildCard()`)
+- Keep widgets small and composable
+- **VS Code Sync:**
+  - `editor.formatOnSave`: true
+  - `source.organizeImports`: explicit
+  - `source.fixAll`: explicit
+
+#### State Management
+
+- **Riverpod** is the primary state management system.
+- Use `ConsumerWidget` or `ConsumerStatefulWidget` for all reative widgets.
+- Follow the `notifierProvider` pattern for complex states.
+- Use `AsyncValue` for asynchronous data handling (Loading/Error/Data).
+
+#### Navigation
+
+- MaterialPageRoute is currently the primary navigation method.
+- **Goal:** Future migration to `GoRouter` as planned in roadmap.
+- 4 navigation wrappers: main, employee, business, admin.
+
+#### Styling
+
+- **Colors**: Use `AppColors` constants (lib/core/constants/app_colors.dart)
+- **Typography**: Use `AppTextStyles` (lib/core/constants/app_text_styles.dart)
+  - Added `headlineSmall = h2` and `titleSmall = h4` for consistency.
+- **Theme**: Dark theme is primary, light theme supported via `AppThemeMode`.
+- **Spacing**: Use multiples of 4 (4, 8, 12, 16, 20, 24, etc.)
+
+### 4. Module Organization
+
+#### Customer Module (lib/presentation/customer/)
+
+- discover_screen.dart - Browse businesses
+- business_detail_screen.dart - Business info with tabs
+- appointments_screen.dart - User appointments
+- profile_screen.dart - User profile
+- booking/ - Booking flow (service/time/confirmation)
+
+#### Employee Module (lib/presentation/employee/)
+
+- employee_home_screen.dart - Dashboard
+- employee_schedule_screen.dart - Calendar view
+- employee_profile_screen.dart - Performance metrics
+
+#### Business Module (lib/presentation/business/)
+
+- business_dashboard_screen.dart - Revenue & stats
+- business_employees_screen.dart - Employee management
+- business_services_screen.dart - Service list
+- business_settings_screen.dart - Business settings
+
+#### Admin Module (lib/presentation/admin/)
+
+- admin_dashboard_screen.dart - System overview
+- admin_businesses_screen.dart - All businesses
+- admin_settings_screen.dart - System config
+
+### 5. Common Patterns
+
+#### Screen Structure
+
+```dart
+class MyScreen extends ConsumerWidget {
+  const MyScreen({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    return Scaffold(
+      backgroundColor: AppColors.backgroundDark,
+      body: SafeArea(
+        child: ListView(
+          padding: const EdgeInsets.all(20),
+          children: [
+            _buildHeader(),
+            // ... more widgets
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildHeader() {
+    // Widget implementation
+  }
+}
+```
+
+#### Card Pattern
+
+```dart
+Container(
+  padding: const EdgeInsets.all(16),
+  decoration: BoxDecoration(
+    color: AppColors.surfaceDark,
+    borderRadius: BorderRadius.circular(16),
+    border: Border.all(
+      color: Colors.white.withOpacity(0.05),
+    ),
+  ),
+  child: // ... content
+)
+```
+
+### 6. Git Workflow
+
+- Commit messages: `feat:`, `fix:`, `refactor:`, `docs:`, `style:`
+- Work in `master` branch (single developer)
+- Commit frequently with descriptive messages
+- Git operations from `timesync_flutter/` directory
+
+### 7. Testing & Running
+
+#### Development
+
+```bash
+cd timesync_flutter
+flutter run -d chrome --web-port=8080
+```
+
+#### Build
+
+```bash
+flutter build web
+flutter build apk --release
+```
+
+#### Analysis
+
+```bash
+flutter analyze
+flutter pub get
+```
+
+### 8. What NOT to Do
+
+- ❌ Don't create files in root directory (use timesync_flutter/)
+- ❌ Don't use hardcoded colors (use AppColors)
+- ❌ Don't use hardcoded text styles (use AppTextStyles)
+- ❌ Don't create new navigation patterns (follow existing)
+- ❌ Don't modify core/ files without good reason
+- ❌ Don't use `setState` for complex state (prepare for Riverpod)
+- ❌ Don't break existing screen patterns
+
+### 9. Current Status (Updated 19 Dec 2025)
+
+✅ **Faz 1-8 TAMAMLANDI:**
+- UI Development, Riverpod Integration, Mock API.
+- QR Code, Push Notifications, Reviews & Ratings.
+- UI/UX Enhancements, Stability & Physical Device Support.
+
+✅ **Faz 9: Security & Performance (Devam Ediyor):**
+- **9.1 Secure Storage:** Tamamlandı ✅
+- **9.2 Lazy Loading & Pagination:** Tamamlandı ✅
+
+### 10. Next Development Priorities
+
+1. **Faz 9.3: Image & Asset Optimization**
+   - Resim sıkıştırma, lazy loading images.
+   - Asset yönetimi iyileştirmeleri.
+2. **Faz 9.4: API Key encryption & obfuscation**
+3. **Faz 10: Production Ready**
+   - Gerçek backend entegrasyonu ve ortam konfigürasyonu.
+
+## Quick Reference
+
+### Colors
+
+- Primary: `AppColors.primary` (#36E27B)
+- Background: `AppColors.backgroundDark` (#112117)
+- Surface: `AppColors.surfaceDark` (#1B3224)
+- Accent Purple: `AppColors.accentPurple` (#BA68C8)
+- Accent Orange: `AppColors.accentOrange` (#FF8A65)
+
+### Text Styles
+
+- Display: `AppTextStyles.display1`, `AppTextStyles.display2`
+- Headings: `AppTextStyles.h1` through `AppTextStyles.h4`
+- Body: `AppTextStyles.bodyLarge`, `.bodyMedium`, `.bodySmall`
+- Others: `AppTextStyles.caption`, `.button`
+
+### Navigation Routes
+
+- Welcome → MainNavigation (Customer)
+- Welcome → EmployeeNavigation (Employee)
+- Welcome → BusinessNavigation (Business)
+- Welcome → AdminNavigation (Super Admin)
+
+## Remember
+
+Always verify you're in the `timesync_flutter/` directory before running Flutter commands!

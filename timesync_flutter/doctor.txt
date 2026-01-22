@@ -1,0 +1,38 @@
+[✓] Flutter (Channel stable, 3.38.5, on Fedora Linux 43 (Workstation Edition) 6.17.11-300.fc43.x86_64, locale en_US.UTF-8) [30ms]
+    • Flutter version 3.38.5 on channel stable at /home/yusakru/flutter
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision f6ff1529fd (7 days ago), 2025-12-11 11:50:07 -0500
+    • Engine revision 1527ae0ec5
+    • Dart version 3.10.4
+    • DevTools version 2.51.1
+    • Feature flags: enable-web, enable-linux-desktop, enable-macos-desktop, enable-windows-desktop, enable-android, enable-ios, cli-animations, enable-native-assets, omit-legacy-version-file, enable-lldb-debugging
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 36.1.0) [1,006ms]
+    • Android SDK at /home/yusakru/Android/Sdk
+    • Emulator version 36.3.10.0 (build_id 14472402) (CL:N/A)
+    • Platform android-36, build-tools 36.1.0
+    • Java binary at: /home/yusakru/android-studio/jbr/bin/java
+      This is the JDK bundled with the latest Android Studio installation on this machine.
+      To manually set the JDK path, use: `flutter config --jdk-dir="path/to/jdk"`.
+    • Java version OpenJDK Runtime Environment (build 21.0.8+-14196175-b1038.72)
+    • All Android licenses accepted.
+
+[✓] Chrome - develop for the web [6ms]
+    • Chrome at google-chrome
+
+[✓] Linux toolchain - develop for Linux desktop [106ms]
+    • clang version 21.1.7 (Fedora 21.1.7-1.fc43)
+    • cmake version 3.31.10
+    • ninja version 1.13.1
+    • pkg-config version 2.3.0
+    ! Unable to access driver information using 'eglinfo'.
+      It is likely available from your distribution (e.g.: apt install mesa-utils)
+
+[✓] Connected device (2 available) [77ms]
+    • Linux (desktop) • linux  • linux-x64      • Fedora Linux 43 (Workstation Edition) 6.17.11-300.fc43.x86_64
+    • Chrome (web)    • chrome • web-javascript • Google Chrome 143.0.7499.146
+
+[✓] Network resources [658ms]
+    • All expected network resources are available.
+
+• No issues found!

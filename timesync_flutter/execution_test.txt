@@ -1,0 +1,25 @@
+total 140
+drwxr-xr-x. 11 yusakru yusakru  4096 Dec 18 23:25 .
+drwxr-xr-x.  8 yusakru yusakru  4096 Dec 18 12:19 ..
+-rw-r--r--.  1 yusakru yusakru  1420 Dec 18 05:10 analysis_options.yaml
+drwxr-xr-x.  6 yusakru yusakru  4096 Dec 18 12:43 android
+drwxr-xr-x.  8 yusakru yusakru  4096 Dec 18 20:28 build
+drwxr-xr-x.  8 yusakru yusakru  4096 Dec 18 20:31 .dart_tool
+-rw-r--r--.  1 yusakru yusakru     0 Dec 18 23:25 execution_test.txt
+-rw-r--r--.  1 yusakru yusakru  7581 Dec 18 20:20 .flutter-plugins-dependencies
+drwxr-xr-x.  7 yusakru yusakru  4096 Dec 18 20:34 .git
+-rw-r--r--.  1 yusakru yusakru   421 Dec 18 05:12 .gitattributes
+-rw-r--r--.  1 yusakru yusakru  1820 Dec 18 19:37 .gitignore
+drwxr-xr-x.  4 yusakru yusakru  4096 Dec 18 05:10 .idea
+drwxr-xr-x.  7 yusakru yusakru  4096 Dec 18 05:10 ios
+drwxr-xr-x.  5 yusakru yusakru  4096 Dec 18 13:01 lib
+-rw-r--r--.  1 yusakru yusakru   964 Dec 18 05:14 .metadata
+-rw-r--r--.  1 yusakru yusakru 32074 Dec 18 19:44 pubspec.lock
+-rw-r--r--.  1 yusakru yusakru  1014 Dec 18 19:44 pubspec.yaml
+-rw-r--r--.  1 yusakru yusakru  6592 Dec 18 09:36 README.md
+-rw-r--r--.  1 yusakru yusakru 23068 Dec 18 20:16 ROADMAP.md
+drwxr-xr-x.  2 yusakru yusakru  4096 Dec 18 05:10 test
+-rw-r--r--.  1 yusakru yusakru   842 Dec 18 05:10 timesync_flutter.iml
+drwxr-xr-x.  3 yusakru yusakru  4096 Dec 18 05:14 web
+/home/yusakru/Documents/projects/sistem-analiz-ve-tasarımı/timeSync/timesync_flutter
+done

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Çalışan Profil Sayfası</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0df2a6",
+                        "background-light": "#f5f8f7",
+                        "background-dark": "#10221c",
+                        "surface-dark": "#18342b",
+                        "surface-darker": "#22493c",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "1.5rem",
+                        "xl": "2rem",
+                        "2xl": "2.5rem", 
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }.no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display min-h-screen flex flex-col overflow-hidden">
+<div class="mx-auto w-full max-w-md h-screen flex flex-col relative bg-background-light dark:bg-background-dark overflow-y-auto no-scrollbar">
+<header class="sticky top-0 z-20 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm px-5 py-4 flex items-center justify-center border-b border-white/5">
+<h2 class="text-base font-bold tracking-wide">PROFİLİM</h2>
+</header>
+<main class="flex-1 flex flex-col px-5 pt-8 pb-28">
+<div class="flex flex-col items-center mb-10">
+<div class="relative mb-4 group cursor-pointer">
+<div class="w-28 h-28 rounded-full bg-center bg-cover border-4 border-surface-dark shadow-2xl" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBKksiy19WY3lXfSkw9XGMwGAdbRx7MEnvXBJ2PwMqRP59XfTll2Rt8Wucni64XmDHuKMTYJAwiVJC5NEXRErlIrUEQSfS7a-pb2qEtWZF9w21wpEcSNrn3UrazleUb54Gosvp4WWQ1SY3tLcmQHWW5V51kHRnSxmKUTKaq2pYx8_t5oKL3LFjAdcPP_snn4JjiAYjg_8Ki_aEoa3u0MoPrn3z_R8MffpHCVBrE94cGw-lmVOG6-EZpkb60JxRpVawhPS1FNfeLNto");'>
+</div>
+<div class="absolute bottom-1 right-1 w-8 h-8 bg-primary rounded-full border-4 border-background-dark flex items-center justify-center text-background-dark shadow-lg transition-transform group-hover:scale-110">
+<span class="material-symbols-outlined" style="font-size: 16px; font-weight: 700;">edit</span>
+</div>
+</div>
+<div class="text-center">
+<span class="text-primary text-sm font-medium tracking-wider uppercase mb-1 block">Berber</span>
+<h1 class="text-2xl font-extrabold text-white mb-1">Merhaba, Ahmet Usta</h1>
+<p class="text-gray-400 text-sm">Süper Yönetici</p>
+</div>
+</div>
+<div class="mb-8">
+<div class="flex items-center justify-between mb-4 px-1">
+<h3 class="text-xs font-bold text-gray-400 uppercase tracking-widest">Profil Bilgileri</h3>
+</div>
+<div class="bg-surface-dark rounded-2xl p-5 border border-white/5 space-y-5 shadow-lg">
+<div class="group">
+<label class="text-[10px] uppercase text-primary font-bold tracking-wider ml-1 mb-2 block">Ad Soyad</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 group-focus-within:text-white transition-colors" style="font-size: 20px;">person</span>
+<input class="w-full bg-background-dark border border-white/5 focus:border-primary/50 focus:bg-surface-darker rounded-xl py-3.5 pl-10 pr-4 text-white text-sm font-medium outline-none transition-all placeholder-gray-600 focus:ring-0" type="text" value="Ahmet Usta"/>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-gray-600" style="font-size: 18px;">edit</span>
+</div>
+</div>
+<div class="group">
+<label class="text-[10px] uppercase text-primary font-bold tracking-wider ml-1 mb-2 block">E-posta Adresi</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 group-focus-within:text-white transition-colors" style="font-size: 20px;">mail</span>
+<input class="w-full bg-background-dark border border-white/5 focus:border-primary/50 focus:bg-surface-darker rounded-xl py-3.5 pl-10 pr-4 text-white text-sm font-medium outline-none transition-all placeholder-gray-600 focus:ring-0" type="email" value="ahmet@timesync.com"/>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-gray-600" style="font-size: 18px;">edit</span>
+</div>
+</div>
+<div class="group">
+<label class="text-[10px] uppercase text-primary font-bold tracking-wider ml-1 mb-2 block">Telefon Numarası</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-500 group-focus-within:text-white transition-colors" style="font-size: 20px;">call</span>
+<input class="w-full bg-background-dark border border-white/5 focus:border-primary/50 focus:bg-surface-darker rounded-xl py-3.5 pl-10 pr-4 text-white text-sm font-medium outline-none transition-all placeholder-gray-600 focus:ring-0" type="tel" value="+90 555 123 45 67"/>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-gray-600" style="font-size: 18px;">edit</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mb-8">
+<div class="flex items-center justify-between mb-4 px-1">
+<h3 class="text-xs font-bold text-gray-400 uppercase tracking-widest">Ayarlar</h3>
+</div>
+<div class="bg-surface-dark rounded-2xl border border-white/5 overflow-hidden shadow-lg">
+<button class="w-full flex items-center justify-between p-4 hover:bg-white/5 transition-colors border-b border-white/5 group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-xl bg-background-dark flex items-center justify-center text-gray-400 group-hover:text-primary transition-colors border border-white/5">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+<span class="text-white font-semibold text-sm">Çalışma Saatleri</span>
+</div>
+<span class="material-symbols-outlined text-gray-600 group-hover:text-primary transition-colors">chevron_right</span>
+</button>
+<button class="w-full flex items-center justify-between p-4 hover:bg-white/5 transition-colors border-b border-white/5 group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-xl bg-background-dark flex items-center justify-center text-gray-400 group-hover:text-primary transition-colors border border-white/5">
+<span class="material-symbols-outlined">notifications</span>
+</div>
+<span class="text-white font-semibold text-sm">Bildirim Tercihleri</span>
+</div>
+<span class="material-symbols-outlined text-gray-600 group-hover:text-primary transition-colors">chevron_right</span>
+</button>
+<button class="w-full flex items-center justify-between p-4 hover:bg-white/5 transition-colors group">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-xl bg-background-dark flex items-center justify-center text-gray-400 group-hover:text-primary transition-colors border border-white/5">
+<span class="material-symbols-outlined">manage_accounts</span>
+</div>
+<span class="text-white font-semibold text-sm">Hesap Ayarları</span>
+</div>
+<span class="material-symbols-outlined text-gray-600 group-hover:text-primary transition-colors">chevron_right</span>
+</button>
+</div>
+</div>
+<button class="w-full py-4 bg-surface-dark border border-red-500/20 text-red-500 hover:bg-red-500/10 hover:border-red-500/40 font-bold rounded-xl text-sm flex items-center justify-center gap-2 transition-all active:scale-[0.98] shadow-lg mt-auto">
+<span class="material-symbols-outlined" style="font-size: 20px;">logout</span>
+                ÇIKIŞ YAP
+            </button>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md border-t border-white/5 px-6 py-3 flex justify-around items-center z-50 max-w-md mx-auto">
+<button class="flex flex-col items-center gap-1 text-gray-500 hover:text-gray-300 transition-colors">
+<span class="material-symbols-outlined">calendar_month</span>
+<span class="text-[10px] font-medium">Takvim</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-gray-500 hover:text-gray-300 transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+<span class="text-[10px] font-medium">Bildirimler</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-primary">
+<span class="material-symbols-outlined fill-current">person</span>
+<span class="text-[10px] font-medium">Profil</span>
+</button>
+</nav>
+</div>
+
+</body></html>

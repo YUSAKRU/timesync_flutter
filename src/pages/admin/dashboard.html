@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TimeSync Super Admin</title>
+<!-- Google Fonts: Manrope -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2b6cee",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622", // Deep Slate/Black
+                        "surface-dark": "#1e293b",    // Lighter Slate for cards
+                        "surface-darker": "#111722",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-dark text-white font-display antialiased min-h-screen relative pb-20">
+<!-- Header -->
+<header class="sticky top-0 z-40 bg-[#111722]/95 backdrop-blur-md border-b border-gray-800">
+<div class="flex items-center justify-between px-4 py-3">
+<div class="flex items-center gap-3">
+<button class="text-gray-400 hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[28px]">menu</span>
+</button>
+<div>
+<h1 class="text-lg font-bold leading-none tracking-tight">TimeSync</h1>
+<span class="text-xs text-primary font-medium tracking-wide uppercase">Super Admin</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<button class="relative p-1 text-gray-400 hover:text-white">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-1 right-1 h-2 w-2 rounded-full bg-red-500 border border-[#111722]"></span>
+</button>
+<div class="h-9 w-9 rounded-full bg-gradient-to-tr from-primary to-blue-400 p-[2px]">
+<img alt="Admin Profile" class="h-full w-full rounded-full object-cover border-2 border-[#111722]" data-alt="Portrait of a smiling man with glasses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWC2E0d5nUgnTnE7Q8T5F8VgDZtGSR_5FCfQ_EIMY89KGbY8WxHhGc-OnaDA2iAPIduIqt1RAqOKYC3-grxG4ZOtgBfdX3kLuSEI5Fl2w5AWdeFCxxBZGEv_An7shAJN55fAgcR6enlkx8BeA04yBXYliwYrJy4KGuUjwNahUPhpcmzQgzwNC8uOG5GnnSXgRUvxHoqJ8k8P0mHTY8oNI-TVl-fz_jArPVCZE3BUt2x511xJ0oDj7k98aYSc4vbgYtk_qZ8gVtuJo"/>
+</div>
+</div>
+</div>
+</header>
+<main class="flex flex-col gap-6 pt-4">
+<!-- Metrics Grid -->
+<section class="px-4">
+<div class="grid grid-cols-2 gap-3">
+<!-- Metric 1: Revenue -->
+<div class="bg-[#1e293b] p-4 rounded-xl border border-gray-800 shadow-sm relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-2 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-4xl text-primary">payments</span>
+</div>
+<p class="text-gray-400 text-xs font-medium uppercase tracking-wider mb-1">Toplam Gelir</p>
+<p class="text-2xl font-bold text-white mb-2">1.2M ₺</p>
+<div class="flex items-center gap-1 text-emerald-400 text-xs font-semibold bg-emerald-400/10 w-fit px-1.5 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>%12</span>
+</div>
+</div>
+<!-- Metric 2: Active Biz -->
+<div class="bg-[#1e293b] p-4 rounded-xl border border-gray-800 shadow-sm relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-2 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-4xl text-blue-400">storefront</span>
+</div>
+<p class="text-gray-400 text-xs font-medium uppercase tracking-wider mb-1">Aktif İşletme</p>
+<p class="text-2xl font-bold text-white mb-2">145</p>
+<div class="flex items-center gap-1 text-blue-400 text-xs font-semibold bg-blue-400/10 w-fit px-1.5 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px]">add</span>
+<span>5 Yeni</span>
+</div>
+</div>
+<!-- Metric 3: Total Appointments -->
+<div class="bg-[#1e293b] p-4 rounded-xl border border-gray-800 shadow-sm relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-2 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-4xl text-purple-400">event_available</span>
+</div>
+<p class="text-gray-400 text-xs font-medium uppercase tracking-wider mb-1">Randevular</p>
+<p class="text-2xl font-bold text-white mb-2">12.5K</p>
+<div class="h-4 w-full bg-gray-700/50 rounded-full overflow-hidden mt-1">
+<div class="h-full bg-purple-500 w-[85%]"></div>
+</div>
+</div>
+<!-- Metric 4: Pending -->
+<div class="bg-[#1e293b] p-4 rounded-xl border border-orange-500/30 shadow-sm relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-2 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-4xl text-orange-400">pending_actions</span>
+</div>
+<p class="text-orange-200 text-xs font-medium uppercase tracking-wider mb-1">Onay Bekleyen</p>
+<p class="text-2xl font-bold text-white mb-2">3</p>
+<div class="flex items-center gap-1 text-orange-400 text-xs font-semibold bg-orange-400/10 w-fit px-1.5 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px]">priority_high</span>
+<span>İncelenmeli</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Pending Approvals (Horizontal Scroll) -->
+<section>
+<div class="flex items-center justify-between px-4 mb-3">
+<h3 class="text-lg font-bold text-white">Başvurular</h3>
+<a class="text-sm text-primary font-medium hover:text-blue-400" href="#">Tümünü Gör</a>
+</div>
+<div class="flex overflow-x-auto gap-4 px-4 pb-2 no-scrollbar snap-x snap-mandatory">
+<!-- Pending Card 1 -->
+<div class="snap-center shrink-0 w-[280px] bg-[#192233] rounded-xl border border-gray-800 p-3 shadow-lg flex flex-col gap-3">
+<div class="relative h-32 w-full rounded-lg overflow-hidden">
+<img alt="Interior of a modern spa with candles and towels" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoxhas28GqNhXstapz6JdqIFj6GduhF2cSsYvqrlLBqBlQi_VQvE9iC7JyG0XQ5nqV_aBbnthx-C5InPbsa1aUUHZIiokoLjLzxvLtK71AP3O4pZ5h8MB0GhtfiPb3YNOP5KlkY11_tHEhpsGtqehUMUdc0gjNNSbLSbDt_nHpA_RXADvOhS8wJz8GgnM1XwcXmW3zuHwO_gxeTRp-bHjoNW4YRm44SWNGMAJbXkGXLojtEL9Xcy_QSO7ZNe4f-3hta8_8KJVwUTE"/>
+<div class="absolute bottom-2 left-2 bg-black/60 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-white">
+                            Zen Spa
+                        </div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<p class="text-sm font-semibold text-white">Zen Spa Merkezi</p>
+<div class="flex items-center text-xs text-gray-400 mt-0.5 gap-1">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+                                Nişantaşı, İstanbul
+                            </div>
+</div>
+<span class="text-[10px] bg-blue-500/20 text-blue-300 px-2 py-0.5 rounded font-medium">Gold Paket</span>
+</div>
+<div class="flex gap-2 mt-1">
+<button class="flex-1 bg-[#1e293b] hover:bg-red-900/30 text-red-400 border border-red-900/50 py-2 rounded-lg flex items-center justify-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[18px]">close</span>
+<span class="text-xs font-bold">Reddet</span>
+</button>
+<button class="flex-1 bg-primary hover:bg-blue-600 text-white py-2 rounded-lg flex items-center justify-center gap-1 shadow-lg shadow-blue-900/20 transition-colors">
+<span class="material-symbols-outlined text-[18px]">check</span>
+<span class="text-xs font-bold">Onayla</span>
+</button>
+</div>
+</div>
+<!-- Pending Card 2 -->
+<div class="snap-center shrink-0 w-[280px] bg-[#192233] rounded-xl border border-gray-800 p-3 shadow-lg flex flex-col gap-3">
+<div class="relative h-32 w-full rounded-lg overflow-hidden">
+<img alt="People exercising in a modern gym with weights" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbSI9YsIGvT9Yst9ZqDNTeftC_drAgTVKz-SSAJGhl8uztC-VXHY7qQoE4hbJK9WvBiIogdD709dF8vMqU2DCETzVlfoomv4iIe9aFhpbnKYWycvEWe_RFsN9E3yMaJSv-jnuqzvx-1ZH2csPcxi7ZUqTs5LpxaIm7sERTr3oPNaDhXi87hNcg3u-FTKZGYcEcotlvrvq4ltRpr9u6Hr3XSUByROCBCWqU2Bx8Hj9YnipfH0yOFg8SnpI9Y0yrV80d1QGbDDHFJc0"/>
+<div class="absolute bottom-2 left-2 bg-black/60 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-white">
+                            FitLife Gym
+                        </div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<p class="text-sm font-semibold text-white">FitLife Gym</p>
+<div class="flex items-center text-xs text-gray-400 mt-0.5 gap-1">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+                                Kadıköy, İstanbul
+                            </div>
+</div>
+<span class="text-[10px] bg-gray-700 text-gray-300 px-2 py-0.5 rounded font-medium">Standart</span>
+</div>
+<div class="flex gap-2 mt-1">
+<button class="flex-1 bg-[#1e293b] hover:bg-red-900/30 text-red-400 border border-red-900/50 py-2 rounded-lg flex items-center justify-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[18px]">close</span>
+<span class="text-xs font-bold">Reddet</span>
+</button>
+<button class="flex-1 bg-primary hover:bg-blue-600 text-white py-2 rounded-lg flex items-center justify-center gap-1 shadow-lg shadow-blue-900/20 transition-colors">
+<span class="material-symbols-outlined text-[18px]">check</span>
+<span class="text-xs font-bold">Onayla</span>
+</button>
+</div>
+</div>
+<!-- Pending Card 3 -->
+<div class="snap-center shrink-0 w-[280px] bg-[#192233] rounded-xl border border-gray-800 p-3 shadow-lg flex flex-col gap-3">
+<div class="relative h-32 w-full rounded-lg overflow-hidden">
+<img alt="Close up of beauty treatment tools" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGjWGad2umgnoXiNXJIAa0X8qi_5-wdTvl4uhO6shjfh7vDJbZtNw5J4jpL8lnIjx2A_Gk0CrWQkGwIS5NN5jkTIBHyXyjwS1-ZP1WY7F2q9D0x0a88QOZLby-BVT42cr931U8Mpu0N5jgsEew0sqc3YU9_VKtbUK1fMr6KQSPHJtfc0aCPgwwFWWd6hH5Yi3AftyJnUDoIJEKmSjdFro0cFY3GzH2kq2KYAataQI5OBEyX2a6ZwAohk3t7E8zL39R6Pp5mw2ie-8"/>
+<div class="absolute bottom-2 left-2 bg-black/60 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-white">
+                            Güzellik Atelier
+                        </div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<p class="text-sm font-semibold text-white">Güzellik Atelier</p>
+<div class="flex items-center text-xs text-gray-400 mt-0.5 gap-1">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+                                Alsancak, İzmir
+                            </div>
+</div>
+<span class="text-[10px] bg-blue-500/20 text-blue-300 px-2 py-0.5 rounded font-medium">Gold Paket</span>
+</div>
+<div class="flex gap-2 mt-1">
+<button class="flex-1 bg-[#1e293b] hover:bg-red-900/30 text-red-400 border border-red-900/50 py-2 rounded-lg flex items-center justify-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[18px]">close</span>
+<span class="text-xs font-bold">Reddet</span>
+</button>
+<button class="flex-1 bg-primary hover:bg-blue-600 text-white py-2 rounded-lg flex items-center justify-center gap-1 shadow-lg shadow-blue-900/20 transition-colors">
+<span class="material-symbols-outlined text-[18px]">check</span>
+<span class="text-xs font-bold">Onayla</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Business List (Vertical Feed) -->
+<section class="px-4 pb-4">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-lg font-bold text-white">İşletme Listesi</h3>
+<div class="flex gap-2">
+<button class="bg-[#1e293b] h-8 w-8 flex items-center justify-center rounded-lg border border-gray-700 text-gray-400">
+<span class="material-symbols-outlined text-[20px]">filter_list</span>
+</button>
+<button class="bg-[#1e293b] h-8 w-8 flex items-center justify-center rounded-lg border border-gray-700 text-gray-400">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<!-- List Item 1 -->
+<div class="bg-[#1e293b] rounded-xl p-4 flex items-center justify-between shadow-sm border border-gray-800/50">
+<div class="flex items-center gap-3">
+<div class="h-12 w-12 rounded-lg bg-gray-700 overflow-hidden shrink-0">
+<img alt="Abstract pattern representing beauty clinic" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvw3Jz5XYHfzaAi666TOI-v79MisQuYLpO6nX2B7JPKC3C3ozMegT09W25xWtGCLZAeSF-94yRGt2uA-UlTcRvLuQTwgH7zDCPnWGGm7_pb3fQPUNxx4GS4oj8mbLFnMWAlEQuDQAHVmzM8AKAUPE2ZB2cxQjel3jdvbR9DlQqgKDDLIcPGApnVc08z9bpDE2FeT6twsq7ZFgP4xKSHDIVVLFb0elJ1Vx15V2oriJVrN6KVRcrIgDczoFbJ_8__215KueDbhJexqs"/>
+</div>
+<div class="flex flex-col">
+<h4 class="text-sm font-bold text-white">Estetik Plus</h4>
+<span class="text-xs text-gray-400">Güzellik Merkezi • Şişli</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-2">
+<!-- Toggle Switch (Active) -->
+<div class="relative inline-flex h-5 w-9 items-center rounded-full bg-primary cursor-pointer transition-colors">
+<span class="translate-x-4 inline-block h-3.5 w-3.5 transform rounded-full bg-white transition shadow-sm"></span>
+</div>
+<button class="text-xs text-blue-400 font-medium hover:text-blue-300 flex items-center">
+                            Detay <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- List Item 2 -->
+<div class="bg-[#1e293b] rounded-xl p-4 flex items-center justify-between shadow-sm border border-gray-800/50">
+<div class="flex items-center gap-3">
+<div class="h-12 w-12 rounded-lg bg-gray-700 overflow-hidden shrink-0">
+<img alt="Barber chair in a vintage shop" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVG-wuOgdUhzGdmqPorPLS2WlJQQOW6cXul_nS2Xb-aQvihWd1OLKJom2djYKeNs9oHWC9s94qp4mlwbgDzVQD7CNkqV59GKYt2pSqQ3WCWAeLk8TUlN96ShB3ElBg8b_hiw5VAjasP2mxSYUFycoKL363xd0jolJcpvAUFS0CutHWjArh83o8hUamZzfwmiu1LJh0khUluS67JsVfL-ySWOFra5yaUn254PXfc2M_AjlOQQMu0O_HluUIxB-wLK0yjTv9-aBPmKY"/>
+</div>
+<div class="flex flex-col">
+<h4 class="text-sm font-bold text-white">Barber King</h4>
+<span class="text-xs text-gray-400">Erkek Kuaförü • Beşiktaş</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-2">
+<!-- Toggle Switch (Active) -->
+<div class="relative inline-flex h-5 w-9 items-center rounded-full bg-primary cursor-pointer transition-colors">
+<span class="translate-x-4 inline-block h-3.5 w-3.5 transform rounded-full bg-white transition shadow-sm"></span>
+</div>
+<button class="text-xs text-blue-400 font-medium hover:text-blue-300 flex items-center">
+                            Detay <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- List Item 3 (Passive) -->
+<div class="bg-[#1e293b] rounded-xl p-4 flex items-center justify-between shadow-sm border border-gray-800/50 opacity-80">
+<div class="flex items-center gap-3">
+<div class="h-12 w-12 rounded-lg bg-gray-700 overflow-hidden shrink-0 grayscale">
+<img alt="Yoga mat and calming environment" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBS2AnyZjO-Jp37IQFnlZA90aRZfcK6xldEfwDldtd3aAC6kuaewkc6qs2OVoEIbKVnHKd2LrYWia1o86GjB312cTqUyx-UmDxHEkhvYo4PIqXsn-BUSyHDfZifQv1dqMpai-4nHPRL7ZemNIgZjmk6Vh6Ye_kRkl8_Vk8qtkVciPJoEICPBW6IdL9jHd2_oe5bd0zwsnrjmyPrTIqb-n7FWYW2ycQkC3ppiFwTJuoUF-ZwGK9JCPci3FxNmOby55vGhj9ECGyoq5k"/>
+</div>
+<div class="flex flex-col">
+<h4 class="text-sm font-bold text-gray-300">Yoga Flow</h4>
+<span class="text-xs text-gray-500">Spor &amp; Sağlık • Kadıköy</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-2">
+<!-- Toggle Switch (Passive) -->
+<div class="relative inline-flex h-5 w-9 items-center rounded-full bg-gray-600 cursor-pointer transition-colors">
+<span class="translate-x-1 inline-block h-3.5 w-3.5 transform rounded-full bg-white/80 transition shadow-sm"></span>
+</div>
+<button class="text-xs text-gray-500 font-medium hover:text-gray-400 flex items-center">
+                            Detay <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- List Item 4 -->
+<div class="bg-[#1e293b] rounded-xl p-4 flex items-center justify-between shadow-sm border border-gray-800/50">
+<div class="flex items-center gap-3">
+<div class="h-12 w-12 rounded-lg bg-gray-700 overflow-hidden shrink-0">
+<img alt="Dental clinic equipment" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAz3xpkYecYzU1EOweLRMlmG_2MWUqny774YQds0nqsbHUnyFtWjwLMzRfH-5B6YV2BwBvveDytLB0kDs7WUtzNEr8645LmLvWklV-dpJFzoMIajDAwt3iDXvzbFdtJ9cNxAPJZQSMa2eVEQui-daftTwhURYGvNM12b_vr3GumxSwiCPb0P7NLWxlSURlKfClL-zhARJAuZwxn_b-jQWtlil9v9UQeaox5RRiyuTD3AI_UetkYeO32hwZrqLOk5M3J5Z1D8aKFV_Y"/>
+</div>
+<div class="flex flex-col">
+<h4 class="text-sm font-bold text-white">Diş Dünyası</h4>
+<span class="text-xs text-gray-400">Sağlık • Bakırköy</span>
+</div>
+</div>
+<div class="flex flex-col items-end gap-2">
+<!-- Toggle Switch (Active) -->
+<div class="relative inline-flex h-5 w-9 items-center rounded-full bg-primary cursor-pointer transition-colors">
+<span class="translate-x-4 inline-block h-3.5 w-3.5 transform rounded-full bg-white transition shadow-sm"></span>
+</div>
+<button class="text-xs text-blue-400 font-medium hover:text-blue-300 flex items-center">
+                            Detay <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation -->
+<nav class="fixed bottom-0 left-0 right-0 bg-[#111722]/95 backdrop-blur-md border-t border-gray-800 pb-safe pt-2 px-6 z-50">
+<div class="flex justify-between items-center h-16 max-w-md mx-auto">
+<a class="flex flex-col items-center gap-1 text-primary group" href="#">
+<span class="material-symbols-outlined text-[26px] group-hover:scale-110 transition-transform">dashboard</span>
+<span class="text-[10px] font-medium">Panel</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-500 hover:text-white transition-colors group" href="#">
+<span class="material-symbols-outlined text-[26px] group-hover:scale-110 transition-transform">store</span>
+<span class="text-[10px] font-medium">İşletmeler</span>
+</a>
+<div class="relative -top-6">
+<button class="h-12 w-12 rounded-full bg-primary text-white shadow-lg shadow-blue-500/40 flex items-center justify-center hover:bg-blue-600 transition-colors">
+<span class="material-symbols-outlined text-[28px]">add</span>
+</button>
+</div>
+<a class="flex flex-col items-center gap-1 text-gray-500 hover:text-white transition-colors group" href="#">
+<span class="material-symbols-outlined text-[26px] group-hover:scale-110 transition-transform">bar_chart</span>
+<span class="text-[10px] font-medium">Finans</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-500 hover:text-white transition-colors group" href="#">
+<span class="material-symbols-outlined text-[26px] group-hover:scale-110 transition-transform">settings</span>
+<span class="text-[10px] font-medium">Ayarlar</span>
+</a>
+</div>
+<!-- Safe Area Spacing for iOS Home Indicator -->
+<div class="h-4 w-full"></div>
+</nav>
+</body></html>

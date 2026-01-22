@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Çalışan Bildirimler Sayfası</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0df2a6",
+                        "background-light": "#f5f8f7",
+                        "background-dark": "#10221c",
+                        "surface-dark": "#18342b",
+                        "surface-darker": "#22493c",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "1.5rem",
+                        "xl": "2rem",
+                        "2xl": "2.5rem", 
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }.no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display min-h-screen flex flex-col overflow-hidden">
+<div class="mx-auto w-full max-w-md h-screen flex flex-col relative bg-background-light dark:bg-background-dark overflow-y-auto no-scrollbar">
+<header class="sticky top-0 z-20 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm px-6 py-5 flex items-end justify-between border-b border-white/5">
+<div>
+<h1 class="text-2xl font-bold leading-tight tracking-tight">Bildirimler</h1>
+<p class="text-xs text-gray-500 mt-1 font-medium">3 okunmamış bildiriminiz var</p>
+</div>
+<button class="text-primary text-xs font-semibold hover:text-primary/80 transition-colors bg-surface-dark px-3 py-1.5 rounded-full border border-primary/20 active:scale-95 duration-200">
+                Tümünü Oku
+            </button>
+</header>
+<main class="flex-1 flex flex-col px-5 pt-6 pb-24 space-y-6">
+<div class="space-y-3">
+<h3 class="text-xs font-bold text-gray-500 uppercase tracking-widest pl-1">BUGÜN</h3>
+<div class="bg-surface-dark p-4 rounded-xl border-l-2 border-primary shadow-lg relative group active:scale-[0.98] transition-transform duration-200 cursor-pointer">
+<div class="absolute top-4 right-4 h-2 w-2 rounded-full bg-primary animate-pulse shadow-[0_0_8px_rgba(13,242,166,0.6)]"></div>
+<div class="flex gap-4">
+<div class="h-10 w-10 rounded-full bg-surface-darker flex items-center justify-center shrink-0 text-primary border border-primary/10">
+<span class="material-symbols-outlined text-[22px]">schedule</span>
+</div>
+<div class="flex-1 pr-4">
+<div class="flex justify-between items-start mb-1">
+<h4 class="text-sm font-bold text-white">Yaklaşan Randevu</h4>
+<span class="text-[10px] text-primary font-bold">10 dk önce</span>
+</div>
+<p class="text-xs text-gray-300 leading-relaxed mb-3">
+<span class="font-semibold text-white">Burak Yılmaz</span> randevusu 14:30'da başlıyor. Hazırlık yapmayı unutmayın.
+                            </p>
+<div class="flex gap-2">
+<button class="text-[10px] font-bold bg-primary text-background-dark px-3 py-1.5 rounded-lg hover:bg-white transition-colors">Detaylar</button>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-dark p-4 rounded-xl border-l-2 border-blue-500 shadow-lg relative active:scale-[0.98] transition-transform duration-200 cursor-pointer">
+<div class="absolute top-4 right-4 h-2 w-2 rounded-full bg-blue-500"></div>
+<div class="flex gap-4">
+<div class="h-10 w-10 rounded-full bg-surface-darker flex items-center justify-center shrink-0 text-blue-500 border border-blue-500/10">
+<span class="material-symbols-outlined text-[22px]">assignment_add</span>
+</div>
+<div class="flex-1 pr-4">
+<div class="flex justify-between items-start mb-1">
+<h4 class="text-sm font-bold text-white">Yeni Görev Atandı</h4>
+<span class="text-[10px] text-gray-400 font-medium">1 saat önce</span>
+</div>
+<p class="text-xs text-gray-300 leading-relaxed">
+<span class="font-semibold text-white">Ahmet Usta</span> tarafından yarın 09:00 için yeni bir saç kesimi randevusu atandı.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+<div class="space-y-3">
+<h3 class="text-xs font-bold text-gray-500 uppercase tracking-widest pl-1 mt-2">DÜN</h3>
+<div class="bg-surface-dark/40 p-4 rounded-xl border border-white/5 relative active:scale-[0.98] transition-transform duration-200">
+<div class="flex gap-4 opacity-75 group-hover:opacity-100 transition-opacity">
+<div class="h-10 w-10 rounded-full bg-surface-dark/50 flex items-center justify-center shrink-0 text-gray-400">
+<span class="material-symbols-outlined text-[22px]">edit_calendar</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start mb-1">
+<h4 class="text-sm font-semibold text-gray-300">Randevu Değişikliği</h4>
+<span class="text-[10px] text-gray-500">Dün 16:45</span>
+</div>
+<p class="text-xs text-gray-500 leading-relaxed">
+<span class="text-gray-400 font-medium">Caner Erkin</span> randevu saatini 15:30 olarak güncelledi.
+                            </p>
+</div>
+</div>
+</div>
+<div class="bg-surface-dark/40 p-4 rounded-xl border border-white/5 relative active:scale-[0.98] transition-transform duration-200">
+<div class="flex gap-4 opacity-75">
+<div class="h-10 w-10 rounded-full bg-surface-dark/50 flex items-center justify-center shrink-0 text-red-400">
+<span class="material-symbols-outlined text-[22px]">event_busy</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start mb-1">
+<h4 class="text-sm font-semibold text-gray-300">İptal Bildirimi</h4>
+<span class="text-[10px] text-gray-500">Dün 10:20</span>
+</div>
+<p class="text-xs text-gray-500 leading-relaxed">
+<span class="text-gray-400 font-medium">Mehmet Topal</span> randevusunu iptal etti. Boş zaman dilimi oluştu.
+                            </p>
+</div>
+</div>
+</div>
+<div class="bg-surface-dark/40 p-4 rounded-xl border border-white/5 relative active:scale-[0.98] transition-transform duration-200">
+<div class="flex gap-4 opacity-75">
+<div class="h-10 w-10 rounded-full bg-surface-dark/50 flex items-center justify-center shrink-0 text-gray-400">
+<span class="material-symbols-outlined text-[22px]">admin_panel_settings</span>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-start mb-1">
+<h4 class="text-sm font-semibold text-gray-300">Sistem Bakımı</h4>
+<span class="text-[10px] text-gray-500">23 Ekim</span>
+</div>
+<p class="text-xs text-gray-500 leading-relaxed">
+                                Bu gece 02:00 - 04:00 saatleri arasında planlı bakım çalışması yapılacaktır.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md border-t border-white/5 px-6 py-3 flex justify-around items-center z-50 max-w-md mx-auto safe-pb">
+<button class="flex flex-col items-center gap-1 text-gray-500 hover:text-gray-300 transition-colors group">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">calendar_month</span>
+<span class="text-[10px] font-medium">Takvim</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-primary relative">
+<span class="absolute -top-1 right-3 w-1.5 h-1.5 rounded-full bg-primary shadow-[0_0_5px_#0df2a6]"></span>
+<span class="material-symbols-outlined fill-current drop-shadow-[0_0_8px_rgba(13,242,166,0.3)]">notifications</span>
+<span class="text-[10px] font-bold">Bildirimler</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-gray-500 hover:text-gray-300 transition-colors group">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">person</span>
+<span class="text-[10px] font-medium">Profil</span>
+</button>
+</nav>
+</div>
+
+</body></html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TimeSync - Giriş ve Karşılama</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#36e27b",
+              "primary-dark": "#2ab561",
+              "background-light": "#f6f8f7",
+              "background-dark": "#112117",
+              "surface-dark": "#1b3224",
+              "surface-light": "#ffffff",
+              "text-secondary": "#95c6a9",
+              "accent-orange": "#FF8A65",
+              "accent-purple": "#BA68C8",
+            },
+            fontFamily: {
+              "display": ["Spline Sans", "sans-serif"]
+            },
+            borderRadius: {
+                "DEFAULT": "1rem", 
+                "lg": "1.5rem", 
+                "xl": "2rem", 
+                "2xl": "3rem", 
+                "full": "9999px"
+            },
+            backgroundImage: {
+                'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+        body {
+            font-family: "Spline Sans", sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-gray-900 dark:text-white transition-colors duration-200">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden pb-10">
+<!-- Navbar -->
+<header class="sticky top-0 z-50 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-gray-200 dark:border-white/5">
+<div class="flex items-center justify-between px-5 py-4 max-w-md mx-auto w-full">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">schedule</span>
+<h1 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">TimeSync</h1>
+</div>
+<button class="text-sm font-semibold text-primary hover:text-primary-dark transition-colors">
+                    Giriş Yap
+                </button>
+</div>
+</header>
+<main class="flex-1 flex flex-col items-center w-full max-w-md mx-auto px-4 pt-6 gap-8">
+<!-- Hero Title -->
+<div class="text-center space-y-2">
+<h2 class="text-3xl font-bold leading-tight tracking-tight">
+                    Zamanın Senin <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent-purple">Kontrolünde</span>
+</h2>
+<p class="text-gray-500 dark:text-text-secondary text-sm">
+                    Randevularınızı yönetmenin en modern yolu.
+                </p>
+</div>
+<!-- Split Cards Section -->
+<div class="w-full flex flex-col gap-5">
+<!-- Customer Card -->
+<div class="group relative overflow-hidden rounded-2xl bg-surface-light dark:bg-surface-dark shadow-lg dark:shadow-none border border-gray-100 dark:border-white/5 transition-transform active:scale-[0.98]">
+<!-- Gradient Overlay -->
+<div class="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-accent-purple/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="relative flex flex-col sm:flex-row h-full">
+<div class="h-32 sm:h-auto sm:w-1/3 w-full bg-cover bg-center" data-alt="Happy woman checking her phone for appointments" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBVyycN_LSXF6EtNUmurQBmx7gFI8e-OzkswU8hPOS7QGbb6XKfq156IItM-VikE7QLjuau6o4QPqOgDFMruYOTfu7S9X-lXzsnTrgRZi5mOkn9UMkbGYizr_NfIH5oFv-7I-pK6gbo7blztWlJ2eZVUxHVCNEkUUhSs8yQfm1-dNRbuguDquWAYrOyXUdh5tPUDxXRDBkBwk2P-Vbd2lMnxFEkw-w--7dxmEuxbvihsLXFA29oH8MAjwX9J886O2U-0H_upYpH5_E');">
+<div class="absolute inset-0 bg-black/20 dark:bg-black/40 sm:hidden"></div>
+</div>
+<div class="flex-1 p-5 flex flex-col justify-between gap-4">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-accent-purple text-xl">person</span>
+<span class="text-xs font-bold uppercase tracking-wider text-accent-purple">Müşteriler</span>
+</div>
+<h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1">Zamanını Yönet</h3>
+<p class="text-sm text-gray-500 dark:text-text-secondary line-clamp-2">Favori işletmelerinden saniyeler içinde randevu al.</p>
+</div>
+<button class="w-full sm:w-auto flex items-center justify-center gap-2 bg-accent-purple/10 hover:bg-accent-purple/20 text-accent-purple dark:text-white font-medium py-2.5 px-4 rounded-xl transition-colors text-sm">
+<span>Müşteri Girişi</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Business Card -->
+<div class="group relative overflow-hidden rounded-2xl bg-surface-light dark:bg-surface-dark shadow-lg dark:shadow-none border border-gray-100 dark:border-white/5 transition-transform active:scale-[0.98]">
+<!-- Gradient Overlay -->
+<div class="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-primary/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="relative flex flex-col sm:flex-row h-full">
+<div class="h-32 sm:h-auto sm:w-1/3 w-full bg-cover bg-center order-first sm:order-last" data-alt="Business owner working on tablet in modern office" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA7xjcS-mQytgsBymcSX85WQonIjIDoPU1mw1gs30V6hz2nygpCCviwyZdgCn2hzDuUclTz_Wb96GEPakd8PWDICPLzD0d_6Ppi9goawafgtQ8DuczH4BOdBVnwkHWovrolaHonOKJkDYaJXtWzt633tBHiNRvsFK9sIeOVOumi91jLomc4sq86fZ18Kgmp3EyTvlYlbnlVsCreU0Y5KP5DPojdD_H0nQRnHrx4Wrp2kyYAo7AS5NjzGWyC3VEdI0Jx9ZrEbIYu_K8');">
+<div class="absolute inset-0 bg-black/20 dark:bg-black/40 sm:hidden"></div>
+</div>
+<div class="flex-1 p-5 flex flex-col justify-between gap-4">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-primary text-xl">storefront</span>
+<span class="text-xs font-bold uppercase tracking-wider text-primary">İşletmeler</span>
+</div>
+<h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1">İşini Büyüt</h3>
+<p class="text-sm text-gray-500 dark:text-text-secondary line-clamp-2">Otomatik hatırlatmalar ve raporlarla verimini artır.</p>
+</div>
+<button class="w-full sm:w-auto flex items-center justify-center gap-2 bg-primary hover:bg-primary-dark text-background-dark font-bold py-2.5 px-4 rounded-xl transition-colors text-sm shadow-[0_0_15px_rgba(54,226,123,0.4)]">
+<span>İşletme Girişi</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Features Section -->
+<div class="w-full mt-4">
+<h3 class="text-xl font-bold text-center mb-6 text-gray-900 dark:text-white">Neden Biz?</h3>
+<div class="grid grid-cols-2 gap-3">
+<!-- Feature 1 -->
+<div class="bg-surface-light dark:bg-surface-dark p-4 rounded-2xl border border-gray-100 dark:border-white/5 flex flex-col items-center text-center gap-2 shadow-sm">
+<div class="w-10 h-10 rounded-full bg-accent-orange/10 flex items-center justify-center text-accent-orange mb-1">
+<span class="material-symbols-outlined">verified_user</span>
+</div>
+<h4 class="font-bold text-sm text-gray-900 dark:text-white">No-Show Koruması</h4>
+<p class="text-xs text-gray-500 dark:text-text-secondary leading-relaxed">Gelir kaybını önleyen akıllı ön ödeme sistemi.</p>
+</div>
+<!-- Feature 2 -->
+<div class="bg-surface-light dark:bg-surface-dark p-4 rounded-2xl border border-gray-100 dark:border-white/5 flex flex-col items-center text-center gap-2 shadow-sm">
+<div class="w-10 h-10 rounded-full bg-blue-500/10 flex items-center justify-center text-blue-400 mb-1">
+<span class="material-symbols-outlined">schedule</span>
+</div>
+<h4 class="font-bold text-sm text-gray-900 dark:text-white">7/24 Randevu</h4>
+<p class="text-xs text-gray-500 dark:text-text-secondary leading-relaxed">Siz uyurken bile müşterileriniz randevu alabilsin.</p>
+</div>
+<!-- Feature 3 -->
+<div class="bg-surface-light dark:bg-surface-dark p-4 rounded-2xl border border-gray-100 dark:border-white/5 flex flex-col items-center text-center gap-2 shadow-sm">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-1">
+<span class="material-symbols-outlined">insights</span>
+</div>
+<h4 class="font-bold text-sm text-gray-900 dark:text-white">Gelişmiş Rapor</h4>
+<p class="text-xs text-gray-500 dark:text-text-secondary leading-relaxed">İşletmenizin performansını detaylı analiz edin.</p>
+</div>
+<!-- Feature 4 -->
+<div class="bg-surface-light dark:bg-surface-dark p-4 rounded-2xl border border-gray-100 dark:border-white/5 flex flex-col items-center text-center gap-2 shadow-sm">
+<div class="w-10 h-10 rounded-full bg-purple-500/10 flex items-center justify-center text-purple-400 mb-1">
+<span class="material-symbols-outlined">notifications_active</span>
+</div>
+<h4 class="font-bold text-sm text-gray-900 dark:text-white">SMS Hatırlatma</h4>
+<p class="text-xs text-gray-500 dark:text-text-secondary leading-relaxed">Otomatik mesajlarla randevuları unutturmayın.</p>
+</div>
+</div>
+</div>
+<!-- Footer CTA -->
+<div class="w-full pb-8 pt-4">
+<div class="relative overflow-hidden rounded-2xl bg-gradient-to-r from-gray-900 to-gray-800 dark:from-surface-dark dark:to-[#1a2c20] p-6 text-center border border-gray-200 dark:border-white/10">
+<div class="relative z-10">
+<h3 class="text-white font-bold text-lg mb-2">Hemen Başlayın</h3>
+<p class="text-gray-300 text-sm mb-4">İlk 14 gün ücretsiz deneyin, kart gerekmez.</p>
+<button class="w-full bg-white text-gray-900 hover:bg-gray-100 font-bold py-3 px-6 rounded-xl transition-colors">
+                            Ücretsiz Hesap Oluştur
+                        </button>
+</div>
+<!-- Decorative background elements -->
+<div class="absolute top-0 right-0 -mr-8 -mt-8 w-32 h-32 bg-primary/20 rounded-full blur-2xl"></div>
+<div class="absolute bottom-0 left-0 -ml-8 -mb-8 w-32 h-32 bg-accent-purple/20 rounded-full blur-2xl"></div>
+</div>
+<div class="mt-6 flex justify-center gap-4 text-xs text-gray-400">
+<a class="hover:text-primary transition-colors" href="#">Gizlilik Politikası</a>
+<span>•</span>
+<a class="hover:text-primary transition-colors" href="#">Kullanım Şartları</a>
+</div>
+</div>
+</main>
+</div>
+</body></html>

@@ -1,0 +1,22 @@
+{
+  "recommendations": [
+    // Flutter & Dart (Essential)
+    "dart-code.dart-code",
+    "dart-code.flutter",
+    // Code Quality
+    "usernamehw.errorlens",
+    "streetsidesoftware.code-spell-checker",
+    // Productivity
+    "aaron-bond.better-comments",
+    "gruntfuggly.todo-tree",
+    "eamodio.gitlens",
+    // Flutter Specific
+    "nash.awesome-flutter-snippets",
+    "felixangelov.bloc",
+    // Git
+    "mhutchie.git-graph",
+    // File Icons
+    "pkief.material-icon-theme"
+  ],
+  "unwantedRecommendations": []
+}

@@ -1,0 +1,39 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Flutter (Chrome)",
+      "type": "dart",
+      "request": "launch",
+      "program": "timesync_flutter/lib/main.dart",
+      "cwd": "${workspaceFolder}/timesync_flutter",
+      "deviceId": "chrome",
+      "args": [
+        "--web-port=8080"
+      ]
+    },
+    {
+      "name": "Flutter (Debug)",
+      "type": "dart",
+      "request": "launch",
+      "program": "timesync_flutter/lib/main.dart",
+      "cwd": "${workspaceFolder}/timesync_flutter"
+    },
+    {
+      "name": "Flutter (Profile)",
+      "type": "dart",
+      "request": "launch",
+      "program": "timesync_flutter/lib/main.dart",
+      "cwd": "${workspaceFolder}/timesync_flutter",
+      "flutterMode": "profile"
+    },
+    {
+      "name": "Flutter (Release)",
+      "type": "dart",
+      "request": "launch",
+      "program": "timesync_flutter/lib/main.dart",
+      "cwd": "${workspaceFolder}/timesync_flutter",
+      "flutterMode": "release"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+Launching lib/main.dart on 2412DPC0AG in debug mode...
+Running Gradle task 'assembleDebug'...                          
+lib/presentation/common/settings_screen.dart:223:5: Error: Type 'ThemeMode' not found.
+    ThemeMode themeMode,
+    ^^^^^^^^^
+lib/presentation/common/settings_screen.dart:224:5: Error: Type 'ThemeMode' not found.
+    ThemeMode currentTheme,
+    ^^^^^^^^^
+lib/presentation/common/settings_screen.dart:319:24: Error: Type 'ThemeMode' not found.
+  String _getThemeName(ThemeMode mode) {
+                       ^^^^^^^^^
+lib/core/services/notification_service.dart:7:1: Error: 'NotificationResponse' is imported from both 'package:flutter_local_notifications_platform_interface/src/types.dart' and 'package:timesync_flutter/data/models/notification_model.dart'.
+import '../../data/models/notification_model.dart';
+^^^^^^^^^^^^^^^^^^^^
+lib/presentation/common/settings_screen.dart:89:29: Error: The getter 'ThemeMode' isn't defined for the type 'SettingsScreen'.
+ - 'SettingsScreen' is from 'package:timesync_flutter/presentation/common/settings_screen.dart' ('lib/presentation/common/settings_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'ThemeMode'.
+                            ThemeMode.light,
+                            ^^^^^^^^^
+lib/presentation/common/settings_screen.dart:98:29: Error: The getter 'ThemeMode' isn't defined for the type 'SettingsScreen'.
+ - 'SettingsScreen' is from 'package:timesync_flutter/presentation/common/settings_screen.dart' ('lib/presentation/common/settings_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'ThemeMode'.
+                            ThemeMode.dark,
+                            ^^^^^^^^^
+lib/presentation/common/settings_screen.dart:107:29: Error: The getter 'ThemeMode' isn't defined for the type 'SettingsScreen'.
+ - 'SettingsScreen' is from 'package:timesync_flutter/presentation/common/settings_screen.dart' ('lib/presentation/common/settings_screen.dart').
+Try correcting the name to the name of an existing getter, or defining a getter or field named 'ThemeMode'.
+                            ThemeMode.system,
+                            ^^^^^^^^^
+lib/presentation/common/settings_screen.dart:223:5: Error: 'ThemeMode' isn't a type.
+    ThemeMode themeMode,
+    ^^^^^^^^^
+lib/presentation/common/settings_screen.dart:224:5: Error: 'ThemeMode' isn't a type.
+    ThemeMode currentTheme,
+    ^^^^^^^^^
+lib/presentation/common/settings_screen.dart:319:24: Error: 'ThemeMode' isn't a type.
+  String _getThemeName(ThemeMode mode) {
+                       ^^^^^^^^^
+lib/presentation/common/settings_screen.dart:321:12: Error: Not a constant expression.
+      case ThemeMode.light:
+           ^^^^^^^^^
+lib/presentation/common/settings_screen.dart:323:12: Error: Not a constant expression.
+      case ThemeMode.dark:
+           ^^^^^^^^^
+lib/presentation/common/settings_screen.dart:325:12: Error: Not a constant expression.
+      case ThemeMode.system:
+           ^^^^^^^^^
+lib/presentation/common/settings_screen.dart:319:10: Error: A non-null value must be returned since the return type 'String' doesn't allow null.
+  String _getThemeName(ThemeMode mode) {
+         ^
+lib/data/repositories/api/api_service_repository.dart:19:30: Error: Member not found: 'businessServices'.
+      final path = ApiConfig.businessServices.replaceAll('{businessId}', businessId);
+                             ^^^^^^^^^^^^^^^^
+Target kernel_snapshot_program failed: Exception
+
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileFlutterBuildDebug'.
+> Process 'command '/home/yusakru/flutter/bin/flutter'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 14s
+Running Gradle task 'assembleDebug'...                             14.8s
+Error: Gradle task assembleDebug failed with exit code 1

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TimeSync - Müşteri Keşfet</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec80",
+                        "on-primary": "#11221a",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#0c1812",
+                        "surface-dark": "#162b22",
+                        "surface-highlight": "#1e3a2e",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "1.5rem", "xl": "2rem", "2xl": "2.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+        
+        .bottom-sheet-shadow {
+            box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display antialiased selection:bg-primary selection:text-on-primary">
+<!-- Mobile Container -->
+<div class="relative min-h-screen w-full mx-auto max-w-md bg-background-light dark:bg-background-dark overflow-hidden flex flex-col shadow-2xl">
+<!-- Header Section -->
+<header class="sticky top-0 z-30 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md px-5 pt-12 pb-4 border-b border-transparent dark:border-white/5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="relative group cursor-pointer">
+<div class="h-10 w-10 rounded-full bg-cover bg-center border-2 border-primary/20" data-alt="User profile picture of a smiling young man" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAsYkyxwAOw5ioHq3gtXl0Ic5KSBbDisOHy4SI2rRON9dn9NfqC4vu1yb2aHyq5ozA6SPH1rwPeFyLhrdGSdpW8FaVVOP34pNLuEiTJw9pBnil8oEUDEXxbs_aPmTE5DQkIJy7CzyJFoYpwyTE1xVBhnpoHxyT22WYzj0UBATP7F5GjGLb-Lz-queuEO6A2lnTAg05A4coJOo53ZMloVLW9V_hYjFGZLfWmGeq1AU5UdW-Nxlu3OZue5dHI57nXPDL4sFXFfrGbjnQ");'>
+</div>
+</div>
+<div>
+<p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Hoşgeldin,</p>
+<h2 class="text-lg font-bold leading-tight tracking-tight">Burak 👋</h2>
+</div>
+</div>
+<button class="relative flex h-10 w-10 items-center justify-center rounded-full bg-white dark:bg-surface-dark border border-slate-200 dark:border-white/5 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-slate-600 dark:text-slate-300" style="font-size: 24px;">notifications</span>
+<span class="absolute top-2 right-2.5 h-2 w-2 rounded-full bg-primary ring-2 ring-white dark:ring-surface-dark"></span>
+</button>
+</div>
+</header>
+<!-- Main Content (Scrollable) -->
+<main class="flex-1 overflow-y-auto pb-32 no-scrollbar">
+<!-- Search Bar -->
+<div class="px-5 mt-4 mb-6">
+<label class="relative flex items-center group">
+<span class="absolute left-4 text-slate-400 group-focus-within:text-primary transition-colors material-symbols-outlined" style="font-size: 24px;">search</span>
+<input class="w-full h-14 pl-12 pr-4 rounded-xl bg-white dark:bg-surface-dark border-transparent focus:border-primary focus:ring-0 text-slate-900 dark:text-white placeholder:text-slate-400 font-medium transition-all shadow-sm" placeholder="Hizmet veya İşletme Ara" type="text"/>
+</label>
+</div>
+<!-- Categories -->
+<div class="flex gap-3 px-5 mb-8 overflow-x-auto no-scrollbar pb-2">
+<button class="flex h-10 shrink-0 items-center justify-center px-6 rounded-full bg-white dark:bg-surface-dark border border-slate-200 dark:border-white/5 text-slate-600 dark:text-slate-300 font-semibold text-sm transition-all whitespace-nowrap active:scale-95">
+                    Tümü
+                </button>
+<button class="flex h-10 shrink-0 items-center justify-center px-6 rounded-full bg-primary text-on-primary font-bold text-sm shadow-[0_0_15px_rgba(19,236,128,0.3)] transition-all whitespace-nowrap active:scale-95">
+                    Kuaför
+                </button>
+<button class="flex h-10 shrink-0 items-center justify-center px-6 rounded-full bg-white dark:bg-surface-dark border border-slate-200 dark:border-white/5 text-slate-600 dark:text-slate-300 font-semibold text-sm transition-all whitespace-nowrap active:scale-95">
+                    Dişçi
+                </button>
+<button class="flex h-10 shrink-0 items-center justify-center px-6 rounded-full bg-white dark:bg-surface-dark border border-slate-200 dark:border-white/5 text-slate-600 dark:text-slate-300 font-semibold text-sm transition-all whitespace-nowrap active:scale-95">
+                    Spa
+                </button>
+<button class="flex h-10 shrink-0 items-center justify-center px-6 rounded-full bg-white dark:bg-surface-dark border border-slate-200 dark:border-white/5 text-slate-600 dark:text-slate-300 font-semibold text-sm transition-all whitespace-nowrap active:scale-95">
+                    Diyetisyen
+                </button>
+</div>
+<!-- Discovery Section Title -->
+<div class="px-5 mb-4 flex items-end justify-between">
+<h3 class="text-xl font-bold tracking-tight">Popüler İşletmeler</h3>
+<a class="text-sm font-semibold text-primary mb-1 hover:underline" href="#">Tümünü Gör</a>
+</div>
+<!-- Business Cards List -->
+<div class="flex flex-col gap-6 px-5 pb-6">
+<!-- Card 1 (Makas Sanat) -->
+<div class="group relative flex flex-col rounded-2xl bg-white dark:bg-surface-dark overflow-hidden shadow-lg border border-slate-100 dark:border-white/5 hover:shadow-xl transition-all">
+<div class="relative h-48 w-full bg-cover bg-center" data-alt="Modern barbershop interior with warm lighting and leather chairs" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAR97EsDzamk6dWe_nMsE3apy5XIkzjEuhdxwDalSoqF5wW5Yh9GnF0aG4QreWa-yhK6BpHpaMcKdVUxyi-NnClDEvrKMvMOlAyIio4hhxgp_saWdZrI4y8eoS_rDJRme1hq9KgCLF_5HB6ipM6LVdU5wH9CnEWZ1r5WMFgf4e_qCP7MRCU4mEw8q-HV8SUIc7j3OcQ0SOPbWMQgB1TsMw4WNHw_GZqp1BPUKqWSrQquF0LTRe5F2BlaFypHpaIEEi8R0KBhZ9K1AU");'>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+<div>
+<h4 class="text-white text-xl font-bold mb-1">Makas Sanat</h4>
+<div class="flex items-center text-slate-300 text-xs font-medium">
+<span class="material-symbols-outlined mr-1" style="font-size: 16px;">location_on</span>
+                                    Kadıköy, İstanbul
+                                </div>
+</div>
+<div class="flex items-center bg-white/20 backdrop-blur-md rounded-lg px-2 py-1 border border-white/10">
+<span class="material-symbols-outlined text-yellow-400 mr-1" style="font-size: 16px; font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-white font-bold text-sm">4.8</span>
+<span class="text-slate-300 text-xs ml-1">(120)</span>
+</div>
+</div>
+</div>
+<div class="p-4 flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-500 text-xs font-bold uppercase tracking-wider">Açık</span>
+<span class="text-xs text-slate-500 font-medium">• 09:00 - 21:00</span>
+</div>
+<button class="bg-primary hover:bg-emerald-400 text-on-primary text-sm font-bold py-2 px-5 rounded-full transition-colors active:scale-95 shadow-[0_0_10px_rgba(19,236,128,0.2)]">
+                            Randevu Al
+                        </button>
+</div>
+</div>
+<!-- Card 2 (Zen Wellness) -->
+<div class="group relative flex flex-col rounded-2xl bg-white dark:bg-surface-dark overflow-hidden shadow-lg border border-slate-100 dark:border-white/5 hover:shadow-xl transition-all">
+<div class="relative h-48 w-full bg-cover bg-center" data-alt="Peaceful spa environment with candles and stones" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDF36MabSvx4fPRUfz0-hxWvaO6Se5yeXCchR40GIBrHvSV6KVkYyagRFKEITzfuBUEBXGlph75jUs7SHRvMV3Eleh6cRxwBEgID2xodXZS-5vd9QAD0iSDqk0O2cBuNw2qVnF06n8e5m-lmvtbSSakUhNsmp4d25Wq6caOmNwUG7Qkw23vzBkVOOj9UzARakZnBtjQAkwT51gxMI-u01xn1bYx-Qb7qMXJijHc4qPdaFCM8zYN4vxkJlY0QtWFJ08tYJDc7IfFshc");'>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+<div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+<div>
+<h4 class="text-white text-xl font-bold mb-1">Zen Wellness</h4>
+<div class="flex items-center text-slate-300 text-xs font-medium">
+<span class="material-symbols-outlined mr-1" style="font-size: 16px;">location_on</span>
+                                    Beşiktaş, İstanbul
+                                </div>
+</div>
+<div class="flex items-center bg-white/20 backdrop-blur-md rounded-lg px-2 py-1 border border-white/10">
+<span class="material-symbols-outlined text-yellow-400 mr-1" style="font-size: 16px; font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-white font-bold text-sm">4.9</span>
+<span class="text-slate-300 text-xs ml-1">(85)</span>
+</div>
+</div>
+</div>
+<div class="p-4 flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-500 text-xs font-bold uppercase tracking-wider">Açık</span>
+<span class="text-xs text-slate-500 font-medium">• 10:00 - 22:00</span>
+</div>
+<button class="bg-primary hover:bg-emerald-400 text-on-primary text-sm font-bold py-2 px-5 rounded-full transition-colors active:scale-95 shadow-[0_0_10px_rgba(19,236,128,0.2)]">
+                            Randevu Al
+                        </button>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Sheet Overlay & Container -->
+<!-- In a real React app this would be conditionally rendered or managed by state. Here we simulate the open state. -->
+<div class="absolute inset-0 z-40 bg-black/60 backdrop-blur-sm flex flex-col justify-end">
+<!-- Bottom Sheet Content -->
+<div class="w-full bg-background-light dark:bg-[#112019] rounded-t-[2rem] bottom-sheet-shadow flex flex-col max-h-[85vh] overflow-hidden animate-in slide-in-from-bottom duration-300">
+<!-- Drag Handle -->
+<div class="w-full flex justify-center pt-3 pb-2 flex-shrink-0 cursor-grab active:cursor-grabbing">
+<div class="w-12 h-1.5 rounded-full bg-slate-300 dark:bg-white/20"></div>
+</div>
+<!-- Sheet Header -->
+<div class="px-6 pb-4 border-b border-slate-200 dark:border-white/5 flex justify-between items-center flex-shrink-0">
+<div>
+<h3 class="text-lg font-bold">Randevu Oluştur</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">Makas Sanat</p>
+</div>
+<button class="text-slate-400 hover:text-slate-600 dark:hover:text-white transition-colors">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<!-- Scrollable Wizard Content -->
+<div class="flex-1 overflow-y-auto px-6 py-4 no-scrollbar">
+<!-- Step 1: Services -->
+<div class="mb-6">
+<div class="flex items-center justify-between mb-3">
+<h4 class="text-sm font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">1. Hizmet Seçimi</h4>
+</div>
+<div class="space-y-3">
+<!-- Selected Service -->
+<label class="flex items-center p-3 rounded-xl bg-primary/10 border border-primary cursor-pointer transition-all">
+<div class="flex items-center justify-center w-6 h-6 rounded-full bg-primary border-2 border-primary mr-3">
+<span class="material-symbols-outlined text-on-primary" style="font-size: 16px;">check</span>
+</div>
+<div class="flex-1">
+<p class="font-bold text-slate-900 dark:text-white">Saç Kesimi</p>
+<p class="text-xs text-slate-500 dark:text-slate-400">45 Dakika</p>
+</div>
+<div class="text-right">
+<p class="font-bold text-primary">200₺</p>
+</div>
+<input checked="" class="hidden" name="service" type="radio"/>
+</label>
+<!-- Unselected Service -->
+<label class="flex items-center p-3 rounded-xl bg-white dark:bg-surface-dark border border-slate-200 dark:border-white/5 cursor-pointer opacity-60 hover:opacity-100 transition-all">
+<div class="w-6 h-6 rounded-full border-2 border-slate-300 dark:border-white/20 mr-3"></div>
+<div class="flex-1">
+<p class="font-bold text-slate-900 dark:text-white">Sakal Tıraşı</p>
+<p class="text-xs text-slate-500 dark:text-slate-400">30 Dakika</p>
+</div>
+<div class="text-right">
+<p class="font-bold text-slate-900 dark:text-white">100₺</p>
+</div>
+<input class="hidden" name="service" type="radio"/>
+</label>
+</div>
+</div>
+<!-- Step 2: Personnel -->
+<div class="mb-6">
+<h4 class="text-sm font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-3">2. Personel</h4>
+<div class="flex gap-4 overflow-x-auto no-scrollbar pb-2">
+<!-- Selected Staff -->
+<div class="flex flex-col items-center gap-2 cursor-pointer group min-w-[72px]">
+<div class="relative w-16 h-16 rounded-full p-0.5 border-2 border-primary">
+<div class="w-full h-full rounded-full bg-cover bg-center" data-alt="Portrait of Ahmet, a barber" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuChsz0nnopC7noXmSfiqKsPcpfba6Q603oTx9cnnEwbuiF-83-psNfiYYNDCOOZYlFEj-eGxhezsdaGtpmpTYqOgI8IWfr_Usvn1AVAWqzyVRBEKh9gI8vZMxo4fqFHdjLnaEQ94dIptFfkMp6w4S4PYvSkCbSLrzC8HR3ZTwhTL3vmPWHV2aU_b45BNGFNdBWvFpine1P2v__9Q0cYc8N0qE_aCIWOvMXupOaiTEq9BUlrmB2mqomriQ6E60vgVfTk7y9UUImmz1Y");'></div>
+<div class="absolute bottom-0 right-0 bg-primary text-on-primary rounded-full p-0.5 border-2 border-background-light dark:border-[#112019]">
+<span class="material-symbols-outlined block" style="font-size: 14px;">check</span>
+</div>
+</div>
+<p class="text-xs font-bold text-primary text-center leading-tight">Ahmet<br/>Usta</p>
+</div>
+<!-- Unselected Staff -->
+<div class="flex flex-col items-center gap-2 cursor-pointer group opacity-60 hover:opacity-100 min-w-[72px]">
+<div class="w-16 h-16 rounded-full p-0.5 border-2 border-transparent">
+<div class="w-full h-full rounded-full bg-cover bg-center grayscale group-hover:grayscale-0 transition-all" data-alt="Portrait of Mehmet, a barber" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBn-z1lum0O4VFf5DHYC-IytiGwzVyPcUYwepTVWCrhOykTWU7Ys6FlqzuUqaotUEB0vBtyu0yeU2Stuz9YuIWESmpboLDJBlTL4fOieD_i0zxNs4e3ChML3CPnXi7mkuYnX-YKPpWXzQezsXghAOPX46i_nAws9RG9xUt-DrshRCsMkfW6ozCi4Pa5BSc1GLQvgAoM4GfR92CHKBiCk14fF-Zyqj5gunnfTf8N9JdYWdg1n6jV9CZz8xuq6J922qIWb3yiHHR_8_Q");'></div>
+</div>
+<p class="text-xs font-medium text-slate-500 dark:text-slate-400 text-center leading-tight">Mehmet<br/>Bey</p>
+</div>
+<div class="flex flex-col items-center gap-2 cursor-pointer group opacity-60 hover:opacity-100 min-w-[72px]">
+<div class="w-16 h-16 rounded-full p-0.5 border-2 border-transparent">
+<div class="w-full h-full rounded-full bg-cover bg-center grayscale group-hover:grayscale-0 transition-all" data-alt="Portrait of Selim, a barber" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCq78zs4WMbYj8EYXwe0RjgGq7aP2YawpV2LG8Uzds4SMrMzZmgl0_XpiBrhfVkjr2gEnjPDwQrTIqPXRgtgBDfpwW8MHClpkPq1pKiSTGnmY8AMaBSIkSVXWdkDBUVssbSv2t55mTarHsrvZy1e6iHIMzdsKRG8v1ZutStjInT0375qD1UTfKBkUgkoq92BXkwAXf7PTCWNpFYQSaulTUBXTgwm4jAh4qNIdAEMkJZ4yxntxd4YSriKOvauTzP3ObHNvhX1Odhzco");'></div>
+</div>
+<p class="text-xs font-medium text-slate-500 dark:text-slate-400 text-center leading-tight">Selim<br/>Bey</p>
+</div>
+</div>
+</div>
+<!-- Step 3: Date & Time -->
+<div class="mb-4">
+<div class="flex items-center justify-between mb-3">
+<h4 class="text-sm font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">3. Tarih ve Saat</h4>
+<span class="text-xs font-medium text-primary">Kasım 2023</span>
+</div>
+<!-- Date Strip -->
+<div class="flex gap-2 overflow-x-auto no-scrollbar mb-4 pb-2">
+<div class="flex flex-col items-center justify-center h-16 w-14 rounded-2xl bg-primary text-on-primary shadow-[0_0_10px_rgba(19,236,128,0.3)] shrink-0">
+<span class="text-xs font-medium opacity-80">Pzt</span>
+<span class="text-lg font-bold">14</span>
+</div>
+<div class="flex flex-col items-center justify-center h-16 w-14 rounded-2xl bg-white dark:bg-surface-dark border border-slate-200 dark:border-white/5 text-slate-500 dark:text-slate-400 shrink-0">
+<span class="text-xs font-medium">Sal</span>
+<span class="text-lg font-bold">15</span>
+</div>
+<div class="flex flex-col items-center justify-center h-16 w-14 rounded-2xl bg-white dark:bg-surface-dark border border-slate-200 dark:border-white/5 text-slate-500 dark:text-slate-400 shrink-0">
+<span class="text-xs font-medium">Çar</span>
+<span class="text-lg font-bold">16</span>
+</div>
+<div class="flex flex-col items-center justify-center h-16 w-14 rounded-2xl bg-white dark:bg-surface-dark border border-slate-200 dark:border-white/5 text-slate-500 dark:text-slate-400 shrink-0">
+<span class="text-xs font-medium">Per</span>
+<span class="text-lg font-bold">17</span>
+</div>
+<div class="flex flex-col items-center justify-center h-16 w-14 rounded-2xl bg-white dark:bg-surface-dark border border-slate-200 dark:border-white/5 text-slate-500 dark:text-slate-400 shrink-0">
+<span class="text-xs font-medium">Cum</span>
+<span class="text-lg font-bold">18</span>
+</div>
+</div>
+<!-- Time Grid -->
+<div class="grid grid-cols-4 gap-2">
+<button class="py-2 rounded-lg bg-white dark:bg-surface-dark text-slate-400 text-sm font-medium border border-transparent dark:border-white/5 disabled:opacity-30 line-through" disabled="">13:00</button>
+<button class="py-2 rounded-lg bg-white dark:bg-surface-dark text-slate-900 dark:text-white text-sm font-medium border border-slate-200 dark:border-white/10 hover:border-primary">13:30</button>
+<button class="py-2 rounded-lg bg-white dark:bg-surface-dark text-slate-900 dark:text-white text-sm font-medium border border-slate-200 dark:border-white/10 hover:border-primary">14:00</button>
+<button class="py-2 rounded-lg bg-primary text-on-primary text-sm font-bold shadow-[0_0_10px_rgba(19,236,128,0.2)]">14:30</button>
+<button class="py-2 rounded-lg bg-white dark:bg-surface-dark text-slate-900 dark:text-white text-sm font-medium border border-slate-200 dark:border-white/10 hover:border-primary">15:00</button>
+<button class="py-2 rounded-lg bg-white dark:bg-surface-dark text-slate-400 text-sm font-medium border border-transparent dark:border-white/5 disabled:opacity-30 line-through" disabled="">15:30</button>
+<button class="py-2 rounded-lg bg-white dark:bg-surface-dark text-slate-900 dark:text-white text-sm font-medium border border-slate-200 dark:border-white/10 hover:border-primary">16:00</button>
+<button class="py-2 rounded-lg bg-white dark:bg-surface-dark text-slate-900 dark:text-white text-sm font-medium border border-slate-200 dark:border-white/10 hover:border-primary">16:30</button>
+</div>
+</div>
+</div>
+<!-- Footer Action -->
+<div class="p-6 pt-2 bg-background-light dark:bg-[#112019] flex-shrink-0 z-10">
+<button class="w-full flex items-center justify-between bg-primary hover:bg-emerald-400 text-on-primary font-bold text-lg h-14 px-6 rounded-full shadow-[0_0_20px_rgba(19,236,128,0.3)] transition-all active:scale-[0.98]">
+<span>Onayla ve Öde</span>
+<span class="bg-black/10 px-2 py-0.5 rounded text-base">200₺</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</body></html>

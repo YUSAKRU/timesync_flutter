@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TimeSync - Giriş</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#36e27b",
+                        "primary-dark": "#2ab863",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#112117",
+                        "surface-dark": "#16291f",
+                        "surface-input": "#1d3629",
+                    },
+                    fontFamily: {
+                        "display": ["Spline Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "2xl": "1.5rem", "3xl": "2rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Spline Sans', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Custom Scrollbar hide */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased h-screen w-full overflow-hidden flex justify-center">
+<!-- Mobile Wrapper -->
+<div class="relative w-full h-full max-w-[480px] bg-background-dark flex flex-col">
+<!-- Background Image simulating the app behind -->
+<div class="absolute inset-0 w-full h-full z-0">
+<img class="w-full h-full object-cover opacity-60" data-alt="Abstract dark blurred background representing a modern app interface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqs9IKaOkUxrImPV6ZJsrx1crTBtfXFxJ2zBoCObEr_ZOunYpGgTpG3zvPXnPw1FDlKlE_qZH8G22jltMMEExNZpOdoG37aX5Yap4pYVEQUF9kfeW5q7bv9MMtXomhy53PoY6P1FbKojPDfqWDP5RqNXdjpOVmY77r1gLpqo_kQvvGMTrmpw_8xyyNtV3nGB98omXgvxUJsfoqyu5S3fQCWfmsHfhZKvHAUgqUWjb_FdZfPr17JVAh1YK4jPXCIqUVTS3mTC34us8"/>
+<div class="absolute inset-0 bg-[#112117]/80 backdrop-blur-sm"></div>
+</div>
+<!-- Spacer to push modal down -->
+<div class="flex-1"></div>
+<!-- Bottom Sheet Modal -->
+<div class="relative z-10 w-full bg-surface-dark rounded-t-3xl shadow-[0_-8px_30px_rgba(0,0,0,0.3)] flex flex-col animate-in slide-in-from-bottom duration-500">
+<!-- Handle -->
+<div class="w-full flex justify-center pt-3 pb-1">
+<div class="h-1.5 w-12 rounded-full bg-white/20"></div>
+</div>
+<!-- Header -->
+<div class="px-6 pt-4 pb-6">
+<h1 class="text-white text-[28px] font-bold leading-tight text-center">Hoş Geldiniz</h1>
+</div>
+<!-- Segmented Buttons -->
+<div class="px-6 pb-6">
+<div class="flex p-1 bg-surface-input rounded-full relative">
+<label class="flex-1 text-center cursor-pointer relative z-10">
+<input checked="" class="peer sr-only" name="login-type" type="radio" value="customer"/>
+<div class="py-2.5 px-4 rounded-full text-sm font-semibold text-gray-400 transition-colors peer-checked:text-black peer-checked:bg-primary">
+                            Müşteri
+                        </div>
+</label>
+<label class="flex-1 text-center cursor-pointer relative z-10">
+<input class="peer sr-only" name="login-type" type="radio" value="business"/>
+<div class="py-2.5 px-4 rounded-full text-sm font-semibold text-gray-400 transition-colors peer-checked:text-black peer-checked:bg-primary">
+                            İşletme
+                        </div>
+</label>
+</div>
+</div>
+<!-- Warning Alert -->
+<div class="px-6 pb-6">
+<div class="flex gap-3 bg-primary/10 border border-primary/20 p-4 rounded-2xl items-start">
+<span class="material-symbols-outlined text-primary shrink-0 mt-0.5">info</span>
+<div class="flex flex-col">
+<p class="text-white text-sm font-medium">Dikkat</p>
+<p class="text-gray-400 text-xs leading-relaxed mt-0.5">Randevu oluşturmak için lütfen giriş yapın veya kayıt olun.</p>
+</div>
+</div>
+</div>
+<!-- Form -->
+<div class="px-6 space-y-4 pb-6">
+<!-- Email -->
+<div class="group relative">
+<div class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-primary transition-colors">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<input class="w-full bg-surface-input border-2 border-transparent focus:border-primary/50 text-white placeholder-gray-500 rounded-2xl py-4 pl-12 pr-4 outline-none transition-all" placeholder="E-posta Adresi" type="email"/>
+</div>
+<!-- Password -->
+<div class="group relative">
+<div class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-primary transition-colors">
+<span class="material-symbols-outlined">lock</span>
+</div>
+<input class="w-full bg-surface-input border-2 border-transparent focus:border-primary/50 text-white placeholder-gray-500 rounded-2xl py-4 pl-12 pr-12 outline-none transition-all" placeholder="Şifre" type="password"/>
+<button class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-500 hover:text-white transition-colors">
+<span class="material-symbols-outlined">visibility_off</span>
+</button>
+</div>
+<!-- Forgot Password -->
+<div class="flex justify-end">
+<a class="text-xs font-medium text-gray-400 hover:text-primary transition-colors" href="#">Şifremi Unuttum?</a>
+</div>
+</div>
+<!-- Primary Action -->
+<div class="px-6 pb-6">
+<button class="w-full bg-primary hover:bg-primary-dark text-black font-bold py-4 rounded-full transition-all transform active:scale-[0.98] shadow-[0_0_20px_rgba(54,226,123,0.3)]">
+                    Giriş Yap
+                </button>
+</div>
+<!-- Divider -->
+<div class="px-6 pb-6 flex items-center gap-4">
+<div class="h-px bg-white/10 flex-1"></div>
+<span class="text-xs text-gray-500 font-medium uppercase tracking-wide">veya şununla devam et</span>
+<div class="h-px bg-white/10 flex-1"></div>
+</div>
+<!-- Social Login -->
+<div class="px-6 pb-8 flex gap-4 justify-center">
+<button class="flex-1 max-w-[140px] bg-surface-input hover:bg-white/10 border border-white/5 h-12 rounded-full flex items-center justify-center transition-colors">
+<img class="h-5 w-5 mr-2" data-alt="Google Logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXBkiAPpnUNkHDFE6XTB-ajsYFvO6vFa5YyTQJQHjLiEcix1xcwVr587BTwAI1T2zRNRV2G2v8b34qc7SiHk4YUHEis9yxSODHhA9xwYXcyxU0ahWxgJk9vkZVyetGePvQ2IPUlxRl1bB3-WiBxuN8CdSNCUZozXWeK_9RvD36csWNhcU3l5kF_-whY5CWZGPmjbjqmt5DwsaCf_Sqb6hdxKuTqmNSfSqlLmNPiKcyVb005BrfRZNJTay89oBrvoXBqwAzAbWgaYI"/>
+<span class="text-white text-sm font-medium">Google</span>
+</button>
+<button class="flex-1 max-w-[140px] bg-surface-input hover:bg-white/10 border border-white/5 h-12 rounded-full flex items-center justify-center transition-colors">
+<img class="h-5 w-5 mr-2 invert" data-alt="Apple Logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXBUi0ulVNZWTVvYBAIF5qE5GyxzUihotX3dqsP4TVnxH8rAG0MVMqUSl3DTTulHuzMKm7-MWOtNNV0imnn_z-bk-UlSkEhw-uS5_SU0tMIr4r7srlcbWD3Z0Yd170UpcXLrZyFwMax90X-Wz7NbA3EKW75sd-TRvY9sk6o8e3f6w-fk9YAq7ywjOapkMvLvjfCmgnCr1VDny5hf3ZRKxzIPMxL3A_7IslY5NQC8xVJ3eD8S4LchLrhGsOhCEMUA9KHSY-z3OluMQ"/>
+<span class="text-white text-sm font-medium">Apple</span>
+</button>
+</div>
+<!-- Footer -->
+<div class="px-6 pb-8 text-center bg-surface-input/30 pt-4 rounded-t-3xl border-t border-white/5">
+<p class="text-sm text-gray-400">
+                    Henüz üye değil misiniz? 
+                    <a class="text-primary font-semibold hover:underline ml-1" href="#">Hemen Kayıt Olun</a>
+</p>
+</div>
+</div>
+</div>
+</body></html>

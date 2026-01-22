@@ -1,0 +1,19 @@
+  Generating the build script.
+  Compiling the build script.
+W .dart_tool/build/entrypoint/build.dart:12:8: Error: Error when reading '../../../../../.pub-cache/hosted/pub.dev/build_runner-2.4.13/lib/src/build_script_generate/build_process_state.dart': No such file or directory
+  import 'package:build_runner/src/build_script_generate/build_process_state.dart'
+         ^
+  .dart_tool/build/entrypoint/build.dart:66:13: Error: Undefined name 'buildProcessState'.
+    await _i8.buildProcessState.receive(sendPort);
+              ^^^^^^^^^^^^^^^^^
+  .dart_tool/build/entrypoint/build.dart:67:7: Error: Undefined name 'buildProcessState'.
+    _i8.buildProcessState.isolateExitCode = await _i9.run(
+        ^^^^^^^^^^^^^^^^^
+  .dart_tool/build/entrypoint/build.dart:71:23: Error: Undefined name 'buildProcessState'.
+    _i10.exitCode = _i8.buildProcessState.isolateExitCode!;
+                        ^^^^^^^^^^^^^^^^^
+  .dart_tool/build/entrypoint/build.dart:72:13: Error: Undefined name 'buildProcessState'.
+    await _i8.buildProcessState.send(sendPort);
+              ^^^^^^^^^^^^^^^^^
+E Failed to compile build script. Check builder definitions and generated script .dart_tool/build/entrypoint/build.dart.
+Failed to update packages.

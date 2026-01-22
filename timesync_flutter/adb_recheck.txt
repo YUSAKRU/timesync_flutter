@@ -1,0 +1,3 @@
+List of devices attached
+EE9L99PFUGP7INCQ	device
+

@@ -1,0 +1,73 @@
+{
+  // TimeSync Flutter Project Settings
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit",
+    "source.fixAll": "explicit"
+  },
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "editor.tabSize": 2,
+  // Flutter specific
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.rulers": [
+      80
+    ],
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": "off",
+    "editor.defaultFormatter": "Dart-Code.dart-code"
+  },
+  // File associations
+  "files.associations": {
+    "*.dart": "dart"
+  },
+  // Search & Files
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/build": true,
+    "**/.dart_tool": true,
+    "**/android": false,
+    "**/ios": false
+  },
+  "files.exclude": {
+    "**/.dart_tool": true,
+    "**/.git": false,
+    "**/build": true
+  },
+  // Dart & Flutter
+  "dart.flutterSdkPath": "/home/yusakru/flutter",
+  "dart.lineLength": 80,
+  "dart.debugExternalPackageLibraries": false,
+  "dart.debugSdkLibraries": false,
+  "dart.openDevTools": "flutter",
+  "dart.previewFlutterUiGuides": true,
+  "dart.previewFlutterUiGuidesCustomTracking": true,
+  // Terminal
+  "terminal.integrated.cwd": "${workspaceFolder}/timesync_flutter",
+  "terminal.integrated.defaultProfile.linux": "bash",
+  // Git
+  "git.ignoreLimitWarning": true,
+  // File watcher
+  "files.watcherExclude": {
+    "**/.dart_tool/**": true,
+    "**/build/**": true,
+    "**/node_modules/**": true
+  },
+  // Recommended workspace root for Flutter operations
+  "dart.flutterRunAdditionalArgs": [
+    "--dart-define=FLUTTER_ROOT=timesync_flutter"
+  ],
+  // Quick suggestions
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  }
+}

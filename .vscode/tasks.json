@@ -1,0 +1,80 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Flutter: Run (Chrome)",
+      "type": "shell",
+      "command": "flutter run -d chrome --web-port=8080",
+      "options": {
+        "cwd": "${workspaceFolder}/timesync_flutter"
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Flutter: Clean",
+      "type": "shell",
+      "command": "flutter clean",
+      "options": {
+        "cwd": "${workspaceFolder}/timesync_flutter"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Flutter: Pub Get",
+      "type": "shell",
+      "command": "flutter pub get",
+      "options": {
+        "cwd": "${workspaceFolder}/timesync_flutter"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Flutter: Build APK",
+      "type": "shell",
+      "command": "flutter build apk --release",
+      "options": {
+        "cwd": "${workspaceFolder}/timesync_flutter"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Flutter: Build Web",
+      "type": "shell",
+      "command": "flutter build web",
+      "options": {
+        "cwd": "${workspaceFolder}/timesync_flutter"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Flutter: Analyze",
+      "type": "shell",
+      "command": "flutter analyze",
+      "options": {
+        "cwd": "${workspaceFolder}/timesync_flutter"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Git: Commit & Push",
+      "type": "shell",
+      "command": "git add . && git commit -m '${input:commitMessage}' && git push",
+      "options": {
+        "cwd": "${workspaceFolder}/timesync_flutter"
+      },
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "commitMessage",
+      "type": "promptString",
+      "description": "Commit message",
+      "default": "feat: Update"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+Launching lib/main.dart on 2412DPC0AG in debug mode...
+Running Gradle task 'assembleDebug'...                              7.3s
+✓ Built build/app/outputs/flutter-apk/app-debug.apk
+Installing build/app/outputs/flutter-apk/app-debug.apk...          14.2s
+D/FlutterJNI(23464): Beginning load of flutter...
+D/FlutterJNI(23464): flutter (null) was loaded normally!
+I/flutter (23464): [IMPORTANT:flutter/shell/platform/android/android_context_vk_impeller.cc(62)] Using the Impeller rendering backend (Vulkan).
+I/flutter (23464): ⚠️ Firebase initialization warning: PlatformException(java.lang.Exception: Failed to load FirebaseOptions from resource. Check that you have defined values.xml correctly., Exception, Cause: null, Stacktrace: java.lang.Exception: Failed to load FirebaseOptions from resource. Check that you have defined values.xml correctly.
+I/flutter (23464): 	at io.flutter.plugins.firebase.core.FlutterFirebaseCorePlugin.lambda$optionsFromResource$5(FlutterFirebaseCorePlugin.java:222)
+I/flutter (23464): 	at io.flutter.plugins.firebase.core.FlutterFirebaseCorePlugin.$r8$lambda$UKjIMRLnh50mCq5Rg7c5X1_2d5w(Unknown Source:0)
+I/flutter (23464): 	at io.flutter.plugins.firebase.core.FlutterFirebaseCorePlugin$$ExternalSyntheticLambda3.run(D8$$SyntheticClass:0)
+I/flutter (23464): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1156)
+I/flutter (23464): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:651)
+I/flutter (23464): 	at java.lang.Thread.run(Thread.java:1119)
+I/flutter (23464): , null)
+E/flutter (23464): [ERROR:flutter/runtime/dart_vm_initializer.cc(40)] Unhandled Exception: [core/no-app] No Firebase App '[DEFAULT]' has been created - call Firebase.initializeApp()
+E/flutter (23464): #0      MethodChannelFirebase.app (package:firebase_core_platform_interface/src/method_channel/method_channel_firebase.dart:190:5)
+E/flutter (23464): #1      Firebase.app (package:firebase_core/src/firebase.dart:91:41)
+E/flutter (23464): #2      FirebaseMessaging.instance (package:firebase_messaging/src/messaging.dart:32:47)
+E/flutter (23464): #3      new NotificationService._internal (package:timesync_flutter/core/services/notification_service.dart:31:66)
+E/flutter (23464): #4      NotificationService._instance (package:timesync_flutter/core/services/notification_service.dart:25:68)
+E/flutter (23464): #5      NotificationService._instance (package:timesync_flutter/core/services/notification_service.dart)
+E/flutter (23464): #6      NotificationService.instance (package:timesync_flutter/core/services/notification_service.dart:27:46)
+E/flutter (23464): #7      main (package:timesync_flutter/main.dart:22:29)
+E/flutter (23464): <asynchronous suspension>
+E/flutter (23464): 
+Syncing files to device 2412DPC0AG...                               60ms
+
+Flutter run key commands.
+r Hot reload. 🔥🔥🔥
+R Hot restart.
+h List all available interactive commands.
+d Detach (terminate "flutter run" but leave application running).
+c Clear the screen
+q Quit (terminate the application on the device).
+
+A Dart VM Service on 2412DPC0AG is available at: http://127.0.0.1:45847/BckziMHTSww=/
+The Flutter DevTools debugger and profiler on 2412DPC0AG is available at: http://127.0.0.1:45847/BckziMHTSww=/devtools/?uri=ws://127.0.0.1:45847/BckziMHTSww=/ws
+D/ProfileInstaller(23464): Installing profile for com.example.timesync_flutter
+D/BLASTBufferQueue(23464): [SurfaceView[com.example.timesync_flutter/com.example.timesync_flutter.MainActivity]#1](f:0,a:0) destructor()
+D/BufferQueueConsumer(23464): [SurfaceView[com.example.timesync_flutter/com.example.timesync_flutter.MainActivity]#1(BLAST Consumer)1](id:5ba800000001,api:0,p:-1,c:23464) disconnect
+D/BLASTBufferQueue(23464): [VRI[MainActivity]#0](f:0,a:0) destructor()
+D/BufferQueueConsumer(23464): [VRI[MainActivity]#0(BLAST Consumer)0](id:5ba800000000,api:0,p:-1,c:23464) disconnect
+D/MbrainDebugManagerImpl(23464): MBrainCallback unRegisterCallback
+D/ActivityThread(23464): Fail to check app heapsize due to java.lang.NoSuchMethodException: dalvik.system.VMRuntime.getBlockingGcCountForAlloc []
+Lost connection to device.

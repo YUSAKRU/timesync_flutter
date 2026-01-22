@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html class="dark" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TimeSync Super Admin - İşletmeler</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#2b6cee",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622", // Deep Slate/Black
+                        "surface-dark": "#1e293b",    // Lighter Slate for cards
+                        "surface-darker": "#111722",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>.no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }.no-scrollbar {
+            -ms-overflow-style: none;scrollbar-width: none;}
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-dark text-white font-display antialiased min-h-screen relative pb-24">
+<header class="sticky top-0 z-50 bg-[#111722]/95 backdrop-blur-md border-b border-gray-800">
+<div class="flex items-center justify-between px-4 py-3">
+<div class="flex items-center gap-3">
+<button class="text-gray-400 hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[28px]">menu</span>
+</button>
+<div>
+<h1 class="text-lg font-bold leading-none tracking-tight">TimeSync</h1>
+<span class="text-xs text-primary font-medium tracking-wide uppercase">İşletmeler</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<button class="relative p-1 text-gray-400 hover:text-white">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-1 right-1 h-2 w-2 rounded-full bg-red-500 border border-[#111722]"></span>
+</button>
+<div class="h-9 w-9 rounded-full bg-gradient-to-tr from-primary to-blue-400 p-[2px]">
+<img alt="Admin Profile" class="h-full w-full rounded-full object-cover border-2 border-[#111722]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWC2E0d5nUgnTnE7Q8T5F8VgDZtGSR_5FCfQ_EIMY89KGbY8WxHhGc-OnaDA2iAPIduIqt1RAqOKYC3-grxG4ZOtgBfdX3kLuSEI5Fl2w5AWdeFCxxBZGEv_An7shAJN55fAgcR6enlkx8BeA04yBXYliwYrJy4KGuUjwNahUPhpcmzQgzwNC8uOG5GnnSXgRUvxHoqJ8k8P0mHTY8oNI-TVl-fz_jArPVCZE3BUt2x511xJ0oDj7k98aYSc4vbgYtk_qZ8gVtuJo"/>
+</div>
+</div>
+</div>
+</header>
+<div class="sticky top-[61px] z-40 bg-background-dark/95 backdrop-blur-md border-b border-gray-800 px-4 py-3 shadow-md">
+<div class="flex gap-2 mb-3">
+<div class="relative flex-1">
+<span class="absolute left-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-gray-500 text-[20px]">search</span>
+<input class="w-full bg-[#1e293b] border border-gray-700 text-white rounded-lg pl-10 pr-4 py-2.5 focus:ring-1 focus:ring-primary focus:border-primary text-sm placeholder-gray-500 transition-colors" placeholder="İşletme, kategori veya şehir ara..." type="text"/>
+</div>
+<button class="bg-primary hover:bg-blue-600 text-white px-4 rounded-lg flex items-center justify-center shrink-0 transition-colors shadow-lg shadow-blue-900/20">
+<span class="material-symbols-outlined text-[24px]">add</span>
+</button>
+</div>
+<div class="flex items-center justify-between gap-2 overflow-x-auto no-scrollbar">
+<span class="text-xs font-semibold text-gray-400 whitespace-nowrap">145 İşletme</span>
+<div class="flex gap-2">
+<button class="flex items-center gap-1 bg-[#1e293b] border border-gray-700 hover:border-gray-600 rounded-md px-3 py-1.5 text-xs text-gray-300 whitespace-nowrap transition-colors">
+<span class="material-symbols-outlined text-[16px]">filter_list</span> Filtrele
+                </button>
+<button class="flex items-center gap-1 bg-[#1e293b] border border-gray-700 hover:border-gray-600 rounded-md px-3 py-1.5 text-xs text-gray-300 whitespace-nowrap transition-colors">
+<span class="material-symbols-outlined text-[16px]">sort</span> Sırala
+                </button>
+</div>
+</div>
+</div>
+<main class="flex flex-col gap-4 p-4 pt-2">
+<div class="group bg-[#1e293b] rounded-xl p-4 border border-gray-800/60 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-full blur-2xl -mr-10 -mt-10"></div>
+<div class="flex items-start justify-between mb-3">
+<div class="flex gap-3">
+<div class="h-14 w-14 rounded-xl bg-gray-800 shrink-0 overflow-hidden border border-gray-700">
+<img alt="Spa interior" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoxhas28GqNhXstapz6JdqIFj6GduhF2cSsYvqrlLBqBlQi_VQvE9iC7JyG0XQ5nqV_aBbnthx-C5InPbsa1aUUHZIiokoLjLzxvLtK71AP3O4pZ5h8MB0GhtfiPb3YNOP5KlkY11_tHEhpsGtqehUMUdc0gjNNSbLSbDt_nHpA_RXADvOhS8wJz8GgnM1XwcXmW3zuHwO_gxeTRp-bHjoNW4YRm44SWNGMAJbXkGXLojtEL9Xcy_QSO7ZNe4f-3hta8_8KJVwUTE"/>
+</div>
+<div>
+<h3 class="text-base font-bold text-white leading-tight">Zen Spa Merkezi</h3>
+<p class="text-xs text-gray-400 mt-0.5">Güzellik &amp; Spa • Nişantaşı</p>
+<div class="flex items-center gap-2 mt-1.5">
+<span class="text-[10px] bg-amber-500/10 text-amber-500 px-2 py-0.5 rounded border border-amber-500/20 font-medium">Gold Paket</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox" value=""/>
+<div class="w-9 h-5 bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<span class="text-[10px] text-primary font-medium">Aktif</span>
+</div>
+</div>
+<div class="flex items-center justify-between border-t border-gray-700/50 pt-3 mt-1">
+<div class="flex gap-4">
+<div class="flex flex-col">
+<span class="text-[10px] text-gray-500 uppercase tracking-wide">Randevu</span>
+<span class="text-xs font-semibold text-gray-200">1.2K</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] text-gray-500 uppercase tracking-wide">Puan</span>
+<div class="flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px] text-yellow-400 fill-1">star</span>
+<span class="text-xs font-semibold text-gray-200">4.9</span>
+</div>
+</div>
+</div>
+<button class="text-xs bg-gray-800 hover:bg-gray-700 text-white px-3 py-1.5 rounded-lg border border-gray-700 transition-colors flex items-center gap-1">
+                    Detay <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="group bg-[#1e293b] rounded-xl p-4 border border-gray-800/60 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-blue-500/5 rounded-full blur-2xl -mr-10 -mt-10"></div>
+<div class="flex items-start justify-between mb-3">
+<div class="flex gap-3">
+<div class="h-14 w-14 rounded-xl bg-gray-800 shrink-0 overflow-hidden border border-gray-700">
+<img alt="Gym weights" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbSI9YsIGvT9Yst9ZqDNTeftC_drAgTVKz-SSAJGhl8uztC-VXHY7qQoE4hbJK9WvBiIogdD709dF8vMqU2DCETzVlfoomv4iIe9aFhpbnKYWycvEWe_RFsN9E3yMaJSv-jnuqzvx-1ZH2csPcxi7ZUqTs5LpxaIm7sERTr3oPNaDhXi87hNcg3u-FTKZGYcEcotlvrvq4ltRpr9u6Hr3XSUByROCBCWqU2Bx8Hj9YnipfH0yOFg8SnpI9Y0yrV80d1QGbDDHFJc0"/>
+</div>
+<div>
+<h3 class="text-base font-bold text-white leading-tight">FitLife Gym</h3>
+<p class="text-xs text-gray-400 mt-0.5">Spor &amp; Fitness • Kadıköy</p>
+<div class="flex items-center gap-2 mt-1.5">
+<span class="text-[10px] bg-blue-500/10 text-blue-400 px-2 py-0.5 rounded border border-blue-500/20 font-medium">Standart</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox" value=""/>
+<div class="w-9 h-5 bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<span class="text-[10px] text-primary font-medium">Aktif</span>
+</div>
+</div>
+<div class="flex items-center justify-between border-t border-gray-700/50 pt-3 mt-1">
+<div class="flex gap-4">
+<div class="flex flex-col">
+<span class="text-[10px] text-gray-500 uppercase tracking-wide">Randevu</span>
+<span class="text-xs font-semibold text-gray-200">850</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] text-gray-500 uppercase tracking-wide">Puan</span>
+<div class="flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px] text-yellow-400 fill-1">star</span>
+<span class="text-xs font-semibold text-gray-200">4.7</span>
+</div>
+</div>
+</div>
+<button class="text-xs bg-gray-800 hover:bg-gray-700 text-white px-3 py-1.5 rounded-lg border border-gray-700 transition-colors flex items-center gap-1">
+                    Detay <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="group bg-[#1e293b] rounded-xl p-4 border border-gray-800/60 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-purple-500/5 rounded-full blur-2xl -mr-10 -mt-10"></div>
+<div class="flex items-start justify-between mb-3">
+<div class="flex gap-3">
+<div class="h-14 w-14 rounded-xl bg-gray-800 shrink-0 overflow-hidden border border-gray-700">
+<img alt="Barber shop" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVG-wuOgdUhzGdmqPorPLS2WlJQQOW6cXul_nS2Xb-aQvihWd1OLKJom2djYKeNs9oHWC9s94qp4mlwbgDzVQD7CNkqV59GKYt2pSqQ3WCWAeLk8TUlN96ShB3ElBg8b_hiw5VAjasP2mxSYUFycoKL363xd0jolJcpvAUFS0CutHWjArh83o8hUamZzfwmiu1LJh0khUluS67JsVfL-ySWOFra5yaUn254PXfc2M_AjlOQQMu0O_HluUIxB-wLK0yjTv9-aBPmKY"/>
+</div>
+<div>
+<h3 class="text-base font-bold text-white leading-tight">Barber King</h3>
+<p class="text-xs text-gray-400 mt-0.5">Erkek Kuaförü • Beşiktaş</p>
+<div class="flex items-center gap-2 mt-1.5">
+<span class="text-[10px] bg-purple-500/10 text-purple-400 px-2 py-0.5 rounded border border-purple-500/20 font-medium">Premium</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox" value=""/>
+<div class="w-9 h-5 bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<span class="text-[10px] text-primary font-medium">Aktif</span>
+</div>
+</div>
+<div class="flex items-center justify-between border-t border-gray-700/50 pt-3 mt-1">
+<div class="flex gap-4">
+<div class="flex flex-col">
+<span class="text-[10px] text-gray-500 uppercase tracking-wide">Randevu</span>
+<span class="text-xs font-semibold text-gray-200">2.1K</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] text-gray-500 uppercase tracking-wide">Puan</span>
+<div class="flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px] text-yellow-400 fill-1">star</span>
+<span class="text-xs font-semibold text-gray-200">4.8</span>
+</div>
+</div>
+</div>
+<button class="text-xs bg-gray-800 hover:bg-gray-700 text-white px-3 py-1.5 rounded-lg border border-gray-700 transition-colors flex items-center gap-1">
+                    Detay <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="group bg-[#1e293b] rounded-xl p-4 border border-gray-800/60 shadow-sm relative overflow-hidden opacity-90">
+<div class="flex items-start justify-between mb-3">
+<div class="flex gap-3">
+<div class="h-14 w-14 rounded-xl bg-gray-800 shrink-0 overflow-hidden border border-gray-700 grayscale">
+<img alt="Yoga studio" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBS2AnyZjO-Jp37IQFnlZA90aRZfcK6xldEfwDldtd3aAC6kuaewkc6qs2OVoEIbKVnHKd2LrYWia1o86GjB312cTqUyx-UmDxHEkhvYo4PIqXsn-BUSyHDfZifQv1dqMpai-4nHPRL7ZemNIgZjmk6Vh6Ye_kRkl8_Vk8qtkVciPJoEICPBW6IdL9jHd2_oe5bd0zwsnrjmyPrTIqb-n7FWYW2ycQkC3ppiFwTJuoUF-ZwGK9JCPci3FxNmOby55vGhj9ECGyoq5k"/>
+</div>
+<div>
+<h3 class="text-base font-bold text-gray-300 leading-tight">Yoga Flow</h3>
+<p class="text-xs text-gray-500 mt-0.5">Sağlık &amp; Yaşam • Kadıköy</p>
+<div class="flex items-center gap-2 mt-1.5">
+<span class="text-[10px] bg-gray-700/50 text-gray-400 px-2 py-0.5 rounded border border-gray-600/30 font-medium">Basic Paket</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1">
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox" value=""/>
+<div class="w-9 h-5 bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<span class="text-[10px] text-gray-500 font-medium">Pasif</span>
+</div>
+</div>
+<div class="flex items-center justify-between border-t border-gray-700/50 pt-3 mt-1">
+<div class="flex gap-4">
+<div class="flex flex-col">
+<span class="text-[10px] text-gray-500 uppercase tracking-wide">Randevu</span>
+<span class="text-xs font-semibold text-gray-400">42</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] text-gray-500 uppercase tracking-wide">Puan</span>
+<div class="flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px] text-gray-500">star</span>
+<span class="text-xs font-semibold text-gray-400">-</span>
+</div>
+</div>
+</div>
+<button class="text-xs bg-gray-800/50 hover:bg-gray-700 text-gray-400 px-3 py-1.5 rounded-lg border border-gray-700 transition-colors flex items-center gap-1">
+                    Detay <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="group bg-[#1e293b] rounded-xl p-4 border border-gray-800/60 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-teal-500/5 rounded-full blur-2xl -mr-10 -mt-10"></div>
+<div class="flex items-start justify-between mb-3">
+<div class="flex gap-3">
+<div class="h-14 w-14 rounded-xl bg-gray-800 shrink-0 overflow-hidden border border-gray-700">
+<img alt="Dental clinic" class="h-full w-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAz3xpkYecYzU1EOweLRMlmG_2MWUqny774YQds0nqsbHUnyFtWjwLMzRfH-5B6YV2BwBvveDytLB0kDs7WUtzNEr8645LmLvWklV-dpJFzoMIajDAwt3iDXvzbFdtJ9cNxAPJZQSMa2eVEQui-daftTwhURYGvNM12b_vr3GumxSwiCPb0P7NLWxlSURlKfClL-zhARJAuZwxn_b-jQWtlil9v9UQeaox5RRiyuTD3AI_UetkYeO32hwZrqLOk5M3J5Z1D8aKFV_Y"/>
+</div>
+<div>
+<h3 class="text-base font-bold text-white leading-tight">Diş Dünyası</h3>
+<p class="text-xs text-gray-400 mt-0.5">Sağlık &amp; Klinik • Bakırköy</p>
+<div class="flex items-center gap-2 mt-1.5">
+<span class="text-[10px] bg-teal-500/10 text-teal-400 px-2 py-0.5 rounded border border-teal-500/20 font-medium">Kurumsal</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox" value=""/>
+<div class="w-9 h-5 bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<span class="text-[10px] text-primary font-medium">Aktif</span>
+</div>
+</div>
+<div class="flex items-center justify-between border-t border-gray-700/50 pt-3 mt-1">
+<div class="flex gap-4">
+<div class="flex flex-col">
+<span class="text-[10px] text-gray-500 uppercase tracking-wide">Randevu</span>
+<span class="text-xs font-semibold text-gray-200">5.6K</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] text-gray-500 uppercase tracking-wide">Puan</span>
+<div class="flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px] text-yellow-400 fill-1">star</span>
+<span class="text-xs font-semibold text-gray-200">4.9</span>
+</div>
+</div>
+</div>
+<button class="text-xs bg-gray-800 hover:bg-gray-700 text-white px-3 py-1.5 rounded-lg border border-gray-700 transition-colors flex items-center gap-1">
+                    Detay <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+</div>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 bg-[#111722]/95 backdrop-blur-md border-t border-gray-800 pb-safe pt-2 px-6 z-50">
+<div class="flex justify-between items-center h-16 max-w-md mx-auto">
+<a class="flex flex-col items-center gap-1 text-gray-500 hover:text-white transition-colors group" href="#">
+<span class="material-symbols-outlined text-[26px] group-hover:scale-110 transition-transform">dashboard</span>
+<span class="text-[10px] font-medium">Panel</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary group" href="#">
+<span class="material-symbols-outlined text-[26px] group-hover:scale-110 transition-transform">store</span>
+<span class="text-[10px] font-medium">İşletmeler</span>
+</a>
+<div class="relative -top-6">
+<button class="h-12 w-12 rounded-full bg-primary text-white shadow-lg shadow-blue-500/40 flex items-center justify-center hover:bg-blue-600 transition-colors">
+<span class="material-symbols-outlined text-[28px]">add</span>
+</button>
+</div>
+<a class="flex flex-col items-center gap-1 text-gray-500 hover:text-white transition-colors group" href="#">
+<span class="material-symbols-outlined text-[26px] group-hover:scale-110 transition-transform">bar_chart</span>
+<span class="text-[10px] font-medium">Finans</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-gray-500 hover:text-white transition-colors group" href="#">
+<span class="material-symbols-outlined text-[26px] group-hover:scale-110 transition-transform">settings</span>
+<span class="text-[10px] font-medium">Ayarlar</span>
+</a>
+</div>
+<div class="h-4 w-full"></div>
+</nav>
+
+</body></html>
